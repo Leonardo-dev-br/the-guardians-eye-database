@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="10DF9AB5-45BE-2D94-0EF7-0718D1E09216">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-28 21:05:27 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

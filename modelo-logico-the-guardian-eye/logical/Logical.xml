@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="215DD356-16FF-D5AF-6EA0-DAD0AB383649" mainViewID="568BF67E-8CD0-BA92-005A-F4CDB7937335">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-28 21:05:27 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>
