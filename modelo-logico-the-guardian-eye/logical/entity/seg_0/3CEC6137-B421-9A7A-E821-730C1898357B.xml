@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3CEC6137-B421-9A7A-E821-730C1898357B" name="TB_TGE_IMPACTO_CLASSIFICACAO">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-29 01:24:50 UTC</createdTime>
-<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
 <engineerTo>
 <item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
 </engineerTo>
@@ -14,4 +14,57 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_impacto_classificacao" id="2D820375-9710-772F-295D-68117ADDB9CE">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-29 02:25:23 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nivel" id="8873F318-7E44-634F-C99A-BBE6D04BD4BE">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-29 02:25:43 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="desc_nivel" id="4607179F-CEB3-7063-4D60-D57FA9D5545A">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-29 02:25:58 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E2B63595-A7DA-F2BA-90C0-73A90DF6A2A9" name="TB_TGE_IMPACTO_CLASSIFICACAO PK">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-29 02:25:42 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2D820375-9710-772F-295D-68117ADDB9CE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

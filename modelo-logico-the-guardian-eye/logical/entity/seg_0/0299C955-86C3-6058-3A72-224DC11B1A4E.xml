@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0299C955-86C3-6058-3A72-224DC11B1A4E" name="TB_TGE_IMPACTO_HUMANO">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-29 01:30:26 UTC</createdTime>
-<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
 <engineerTo>
 <item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
 </engineerTo>
@@ -18,7 +18,7 @@
 <Attribute name="id_impacto_humano" id="FAD3F8AA-CE8C-9651-BBF9-F414F2BB129E">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-29 01:31:28 UTC</createdTime>
-<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
 <engineerTo>
 <item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
 </engineerTo>
@@ -30,7 +30,7 @@
 <Attribute name="mortos" id="9A7B1BBA-60BB-1085-9D84-515298C491F7">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-29 01:31:54 UTC</createdTime>
-<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
 <engineerTo>
 <item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
 </engineerTo>
@@ -43,7 +43,7 @@
 <Attribute name="quantidade_afetados" id="587B3F38-CA56-36E1-FE84-21A29DAFA16D">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-29 01:32:30 UTC</createdTime>
-<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
 <engineerTo>
 <item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
 </engineerTo>
@@ -55,7 +55,7 @@
 <Attribute name="estado_afetados" id="3321F20E-8FA7-C6C4-8F00-921CEF3ADB09">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-29 01:33:01 UTC</createdTime>
-<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
 <engineerTo>
 <item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
 </engineerTo>
@@ -68,7 +68,7 @@
 <Attribute name="suporte_internacional" id="2A557083-72DF-5C15-F4C3-FBD95EDC0B25">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-29 01:33:39 UTC</createdTime>
-<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
 <engineerTo>
 <item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
 </engineerTo>
@@ -82,7 +82,7 @@
 <identifier id="969AEC63-7CBC-F352-FE70-4441114B2C2D" name="TB_TGE_IMPACTO_HUMANO PK">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-29 01:31:40 UTC</createdTime>
-<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
 <engineerTo>
 <item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
 </engineerTo>

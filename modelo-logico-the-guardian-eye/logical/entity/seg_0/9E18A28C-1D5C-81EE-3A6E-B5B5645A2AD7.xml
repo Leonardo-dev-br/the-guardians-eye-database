@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9E18A28C-1D5C-81EE-3A6E-B5B5645A2AD7" name="TB_TGE_IMPACTO">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-29 00:24:58 UTC</createdTime>
-<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
 <engineerTo>
 <item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
 </engineerTo>
@@ -18,7 +18,7 @@
 <Attribute name="id_impacto" id="CBDBF52E-FC67-7706-F319-67211B122BA3">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-29 01:25:52 UTC</createdTime>
-<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
 <engineerTo>
 <item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
 </engineerTo>
@@ -30,7 +30,7 @@
 <Attribute name="impacto" id="0F1FD7B6-AAE6-36BD-6721-E330A39147B9">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-29 01:26:10 UTC</createdTime>
-<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
 <engineerTo>
 <item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
 </engineerTo>
@@ -45,7 +45,7 @@
 <identifier id="90D8B599-DB36-7A9E-FB15-E33FA8409328" name="TB_TGE_IMPACTO PK">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-29 01:26:07 UTC</createdTime>
-<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
 <engineerTo>
 <item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
 </engineerTo>
