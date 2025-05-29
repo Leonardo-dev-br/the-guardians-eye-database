@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2E2C0C4B-1B01-126E-BB59-38EC48CF03C9" name="TB_TGE_IMPACTO_MATERIAL">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-29 01:30:25 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_impacto_material" id="9942D7C8-ADC3-D027-64FB-966652A410B7">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-29 01:34:24 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="danos_materiais" id="EDD0A845-8361-065B-A38A-E9C4436A8B31">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-29 01:34:43 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>75</dataTypeSize>
+<ownDataTypeParameters>75,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="preco_bruto" id="B3D22796-59B7-552F-FDD2-25BE70665874">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-29 01:35:19 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,20,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="impacto_ambiental" id="340472E5-B2D7-0649-3BD3-BE16FB9C0469">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-29 01:36:57 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="80D57AA6-288C-B079-533D-7C9871E1D426" name="TB_TGE_IMPACTO_MATERIAL PK">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-29 01:34:42 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9942D7C8-ADC3-D027-64FB-966652A410B7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
