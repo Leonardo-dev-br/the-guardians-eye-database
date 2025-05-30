@@ -77,6 +77,20 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_impacto_classificacao" id="E51428BC-0949-059E-8F45-EAA6A48D2AD6">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 00:56:11 UTC</createdTime>
+<generatorID>3B9F4211-FC49-8FE8-2289-5629D65F1A39</generatorID>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<referedAttribute>2D820375-9710-772F-295D-68117ADDB9CE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="969AEC63-7CBC-F352-FE70-4441114B2C2D" name="TB_TGE_IMPACTO_HUMANO PK">

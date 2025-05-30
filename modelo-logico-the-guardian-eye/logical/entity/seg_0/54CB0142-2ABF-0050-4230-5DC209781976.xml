@@ -40,6 +40,34 @@
 <dataTypeSize>75</dataTypeSize>
 <ownDataTypeParameters>75,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="tipo" id="3853B009-3859-1CA8-D421-534C31D99C79">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 01:36:59 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>75</dataTypeSize>
+<ownDataTypeParameters>75,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="subtipo" id="6EE08BCF-427B-1379-BBBA-F73B74BC07EF">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 01:37:16 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>75</dataTypeSize>
+<ownDataTypeParameters>75,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="69F18B1F-CC5B-AF3A-06F2-EE3AB671C2A6" name="TB_TGE_SUBGRUPO_DESASTRE PK">

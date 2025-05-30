@@ -53,6 +53,20 @@
 <dataTypeSize>75</dataTypeSize>
 <ownDataTypeParameters>75,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_impacto_classificacao" id="935181CF-EAEB-96D7-943C-5BF1ADCAA93A">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 00:57:50 UTC</createdTime>
+<generatorID>4A2B3B15-D508-EF37-FA15-AF9759CFE8E4</generatorID>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<referedAttribute>2D820375-9710-772F-295D-68117ADDB9CE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="8CFCBA70-FE70-8516-6EC5-3331F98DF7DB" name="TB_TGE_INCENDIO_FLORESTAL PK">

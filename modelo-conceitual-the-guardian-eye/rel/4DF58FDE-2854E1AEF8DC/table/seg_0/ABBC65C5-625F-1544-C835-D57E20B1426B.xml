@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ABBC65C5-625F-1544-C835-D57E20B1426B" name="TB_TGE_TERRENO_GEOGRAFICO">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>67519AEF-B7D2-0FCD-3823-499A18E33D17</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_terreno" id="7A9648F2-0BE3-5CC5-ACBA-31C985BF0D6F">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>F4E0E99C-84C7-B73F-4D02-95B0B6009721</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="terreno" id="1A6E20F9-3D7A-3E40-EA51-E0D67FD254DA">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>9203CD8C-4AB4-9BF5-C737-97457CF4EEBF</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="41F390DD-0463-418E-F903-805F0A5E47FD" name="TB_TGE_TERRENO_GEOGRAFICO_PK">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="7A9648F2-0BE3-5CC5-ACBA-31C985BF0D6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

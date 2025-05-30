@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E8DF8AE1-327A-9ABE-4371-66795F86B414" containerWithKeyObject="0375792D-E89E-8AA3-6BBB-10595468CDD8" localFKIndex="49124EC3-33D9-C902-9AA1-958E277971E3" name="Relation_18_TB_TGE_IMAGENS_CAPTURADAS_FK">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<generatorID>F35EC1C0-0199-E90C-CD64-BD65E2622C2F</generatorID>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<referredTableLongName>TB_TGE_IMAGENS_CAPTURADAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BCDE1FBE-D90D-5EC9-D650-E701DB10821F</referredTableID>
+<keyObject>25529533-029F-79C9-4B3E-28F85114F194</keyObject>
+<referredKeyID>25529533-029F-79C9-4B3E-28F85114F194</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_imagem</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

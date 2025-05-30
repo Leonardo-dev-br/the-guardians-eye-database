@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4EAC9F0B-7DA6-4C9A-6596-D7B14F9AB1F2" name="TB_TGE_DESASTRE">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-28 23:26:19 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_desastre" id="B5AD3F5D-50B8-B6BA-C324-5DD1CC4E32CE">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-29 02:31:37 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cobrade" id="8720756F-9320-A0E5-1D7D-7EE912708BE0">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-29 02:34:12 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_ocorrencia" id="10E73079-3DF2-4C9E-B387-FC9748C002FF">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-29 03:07:05 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_local" id="708528FA-FCE1-85F7-0130-13A22AB5CDF8">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 01:01:40 UTC</createdTime>
+<generatorID>3163DEF5-55C7-58F8-7782-1A26394565AA</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<referedAttribute>E4DED954-FC66-659C-B221-205D3E845D25</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_impacto" id="3017CEE0-2CD9-074E-E4B0-AA23F09D798C">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 01:21:37 UTC</createdTime>
+<generatorID>8D5B8912-8D3B-34F5-A90D-774B117FCCF8</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<referedAttribute>CBDBF52E-FC67-7706-F319-67211B122BA3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_impacto_material" id="F98DE512-B1B3-3073-0680-53558EBFBC57">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 01:21:37 UTC</createdTime>
+<generatorID>8D5B8912-8D3B-34F5-A90D-774B117FCCF8</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<referedAttribute>CDF6F890-C326-0168-E1A1-CDC1A5AF5F42</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_impacto_humano" id="EE868479-EB4F-4D82-E73B-54B042D0F1F3">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 01:21:37 UTC</createdTime>
+<generatorID>8D5B8912-8D3B-34F5-A90D-774B117FCCF8</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<referedAttribute>30E521B5-7699-C037-C9CD-757978743835</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_grupo_desastre" id="11106CC5-EAD0-AB91-15B3-2F9750928A93">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 01:39:46 UTC</createdTime>
+<generatorID>C8E85FC9-DE8D-00CD-C0B4-C863537AD8F2</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<referedAttribute>A1FF252B-09D0-BC10-EC60-250C5F1CBAA6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_usuario" id="9EFCBF9C-4ADD-09CF-AC2A-5FAA3658F28D">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 01:40:54 UTC</createdTime>
+<generatorID>8DD660CF-F628-D397-C393-5D5C79B7FD47</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<referedAttribute>A2500531-937F-6394-7DA5-403F925ACF82</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0CFEB4E3-8B00-C3CB-122B-8387242B6E14" name="TB_TGE_DESASTRE PK">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-29 02:31:51 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B5AD3F5D-50B8-B6BA-C324-5DD1CC4E32CE</attributeRef>
+<attributeRef>9EFCBF9C-4ADD-09CF-AC2A-5FAA3658F28D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C6BA66CF-8DA4-CA44-1313-D34600EE6819" name="TB_TGE_DESLIZAMENTO">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>21CA9300-A8C3-3649-E7D4-0A5212D818EA</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_deslizamento" id="5265AD63-FC28-0DC2-4903-E8F792F3D5AB">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>27F0DFAF-6D99-1359-4BE4-AADBC8BD770E</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_impacto_classificacao" id="690F12D1-E3EC-E7B4-61A9-400B33AEB680">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>E9CC0799-5318-A130-77AC-0C8F2F127086</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E91A7877-4ABF-589F-4085-408FA9DFA6A9" referredColumn="5F1D8242-F9E0-FEB9-E49F-6DF3A0717EF0"/>
+</associations>
+</Column>
+<Column name="umidade_solo" id="FE7AB884-B14A-07AD-3CF4-F28FA8222806">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>A784FEBF-66D9-E320-4B93-2C7B322C4E3F</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="31806A1F-6F26-60B0-437A-20560C2E1136" name="TB_TGE_DESLIZAMENTO_PK">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>9F7696CB-6EAE-A594-2395-D355750D692E</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5265AD63-FC28-0DC2-4903-E8F792F3D5AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A7D1BA6-E1E4-C368-8CBC-C0AE139C1197" name="TB_TGE_DESLIZAMENTO_TB_TGE_IMPACTO_CLASSIFICACAO_FK">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<generatorID>2ED0DA3E-DEA3-C42A-2C17-6FA714116CF1</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="690F12D1-E3EC-E7B4-61A9-400B33AEB680"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

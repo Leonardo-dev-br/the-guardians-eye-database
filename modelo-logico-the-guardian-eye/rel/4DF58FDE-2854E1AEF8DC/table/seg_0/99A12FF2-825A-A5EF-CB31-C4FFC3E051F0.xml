@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="99A12FF2-825A-A5EF-CB31-C4FFC3E051F0" name="Relation_13">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TB_TGE_SENSORES_id_sensor" id="A655DA61-BA4D-7C27-269C-0EB9B85E4EF7">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F2DEF1F4-A6B9-F1BA-B75A-4AED5140E5D2" referredColumn="B42F12E4-D0F5-E083-73D1-2D855BBAB834"/>
+</associations>
+</Column>
+<Column name="TB_TGE_DESASTRE_id_desastre" id="9F4E9142-7984-A373-89C2-4B1E1E7A745D">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CC563C2E-D321-DA18-543A-F3EF78D05E53" referredColumn="D30CEDFB-547C-55F3-17F1-DE9B0E9F0950"/>
+</associations>
+</Column>
+<Column name="TB_TGE_DESASTRE_id_usuario" id="E6A3FEE3-7273-226F-90BA-ECF337CBFE9A">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F736A8B4-6CBC-781C-FCC3-71A33E7B2763" name="Relation_13_PK">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A655DA61-BA4D-7C27-269C-0EB9B85E4EF7"/>
+<colUsage columnID="9F4E9142-7984-A373-89C2-4B1E1E7A745D"/>
+<colUsage columnID="E6A3FEE3-7273-226F-90BA-ECF337CBFE9A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E23E9662-CE90-6CD4-A130-31C4A897B88D" name="Relation_13_TB_TGE_SENSORES_FK">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<generatorID>2B17D789-FF8C-B1C6-121D-D9FD5B387600</generatorID>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A655DA61-BA4D-7C27-269C-0EB9B85E4EF7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03EE5A7A-3571-55D5-ED99-B3702897B6DB" name="Relation_13_TB_TGE_DESASTRE_FK">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<generatorID>2B17D789-FF8C-B1C6-121D-D9FD5B387600</generatorID>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F4E9142-7984-A373-89C2-4B1E1E7A745D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

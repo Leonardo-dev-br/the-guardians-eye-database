@@ -25,14 +25,14 @@ USUÁRIOS DO APP
 
 
 TABELAS
-TB_TGE_DESASTRE -> São os tipos de Desastres Naturais: *INUDAÇÕES*, *DESLIZAMENTOS* ,*SECAS*, *INCÊNDIO*
-TB_TGE_IMPACTO -> 
-TB_TGE_TIPO_IMPACTO -> Se foram Vidas Humanas ou Materiais
+TB_TGE_DESASTRE -> Tabela responsável por registrar a ocorrência da desastre: data, hora, local, qual desastre
+TB_TGE_IMPACTO -> Tabela para registrar a gravidade dos dados causados pelo desastre
+TB_TGE_IMPACTO_CLASSIFICACAO -> Tabela para caracterizar/classificar o impacto causado pelo desastre: pequeno, médio, grave
 TB_TGE_IMPACTO_HUMANO -> Características que determinam se houve impacto humano: mortes, vidas afetadas etc
 TB_TGE_IMPACTO_MATERIAL -> Características que determinam se houve impacto material: perda de casas, paisagem danificada etc
 TB_TGE_USUARIO -> Tipos de usuários quem podem acessar o sistema
-TB_TGE_TERRENO_GEOGRAFICO -> É o tipo de terreno onde aconteceu o desastre: Planice, depressão, colina
-TB_TGE_ZONA -> Rural ou Urbana
+TB_TGE_TERRENO_GEOGRAFICO -> É o tipo de terreno onde aconteceu o desastre: Planície, depressão, colina
+TB_TGE_ZONA -> Determinada entre: Rural ou Urbana; pelas características: população, porte (pequena, média, grande)
 TB_TGE_GRUPO_DESASTRE -> Geológico, Hidrológico, Meteorológico, Climatológico
 TB_TGE_SUBGRUPO_DESASTRE -> Terremoto, Inundações, Seca
 TB_TGE_TIPO_DESASTRE ->  Deslizamentos, Onda de calor, Seca,  Incêndio florestal
@@ -42,10 +42,12 @@ TB_TGE_DESLIZAMENTO -> Guarda as características e definições da deslizamento
 TB_TGE_SECA -> Guarda as características e definições da Seca
 TB_TGE_INCENDIO_FLORESTAL -> Guarda as características e definições da Incêndio Florestal
 TB_TGE_LOCAL -> Onde ocorreu o desastre
+TB_TGE_SENSORES -> Tabela responsável por registrar quais os sensores utilizados para captação
+TB_TGE_VANT -> VANT - Veículo Aéreo Não Tripulado. Tabela responsável por registrar qual aeronave foi utilizada para registro pós desastre
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-PREVENÇÃO DESASTRE - Cliente Comum e Entidades Governamentais e Instituições
+PREVENÇÃO DESASTRE - CEMADEN (Centro Nacional de Monitoramento e Alertas de Desastres Naturais)
 - Sensores que registram eventos
 - Tomada de decisão com esses dados (IA)
 - Mensagem Alerta via App para o usuário
@@ -54,4 +56,4 @@ PREVENÇÃO DESASTRE - Cliente Comum e Entidades Governamentais e Instituições
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-RESGATE PÓS DESASTRE - Entidades Governamentais e Instituições
+RESGATE PÓS DESASTRE - CEMADEN (Centro Nacional de Monitoramento e Alertas de Desastres Naturais)

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EE3C0B4F-0640-7126-8F31-37E2896C6483" containerWithKeyObject="22A0C52B-940D-3A58-DFB0-EA9D3B3F687E" localFKIndex="34EBA36A-2901-A515-D562-23F1E3D301D6" name="TB_TGE_IMPACTO_TB_TGE_IMPACTO_MATERIAL_FK">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>49A37C29-22C6-8599-D9C7-2B509CCAD82F</generatorID>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<referredTableLongName>TB_TGE_IMPACTO_MATERIAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9FF0949A-3027-ECD4-DB46-23B11C80D877</referredTableID>
+<keyObject>BCAC6FCB-9924-6B7A-CAD5-067D76701F16</keyObject>
+<referredKeyID>BCAC6FCB-9924-6B7A-CAD5-067D76701F16</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_impacto_material</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

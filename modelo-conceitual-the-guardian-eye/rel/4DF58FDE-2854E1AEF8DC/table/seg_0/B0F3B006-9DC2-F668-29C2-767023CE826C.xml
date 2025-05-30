@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B0F3B006-9DC2-F668-29C2-767023CE826C" name="TB_TGE_ZONA">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>E69233C3-37B8-B19D-D1D7-3CF9A945D8A4</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_zona" id="F47E49F2-6969-263C-D00C-B6E29E47C013">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>5E45FF0D-077E-6AD0-21DA-C25BE2B0E32A</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="desc_zona" id="829498C5-EB3B-D83F-014E-A0108AF49127">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>37C63C71-BAE6-EADC-AFD2-CE7354A24E62</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="populacao" id="72DA1871-59B1-EC3E-EAA9-D73672A783BC">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>4999D38A-603D-43C5-B606-B74B3B6A17E1</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="porte" id="64266949-7427-74EB-FB6F-2BA33F2D6A88">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>4AD0952A-C6A0-DDF7-118F-D10BCC4EC06E</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0D62680B-7BE7-AD63-F804-E5F35241CF1E" name="TB_TGE_ZONA_PK">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>2632896C-57AE-7B54-36F6-73553FDBB31B</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F47E49F2-6969-263C-D00C-B6E29E47C013"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

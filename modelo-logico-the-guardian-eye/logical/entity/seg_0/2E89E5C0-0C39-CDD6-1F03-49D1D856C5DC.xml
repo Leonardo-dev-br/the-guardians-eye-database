@@ -52,6 +52,31 @@
 <dataTypeSize>125</dataTypeSize>
 <ownDataTypeParameters>125,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="municipio" id="64517266-F2D4-C63C-DC66-B1615D8362FB">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 00:38:09 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>75</dataTypeSize>
+<ownDataTypeParameters>75,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero" id="880DDECE-E200-F8E5-7A3A-B64FE3B2647A">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 01:01:10 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="3C964336-0491-3E67-D690-939690BD38EE" name="TB_TGE_LOCAL PK">

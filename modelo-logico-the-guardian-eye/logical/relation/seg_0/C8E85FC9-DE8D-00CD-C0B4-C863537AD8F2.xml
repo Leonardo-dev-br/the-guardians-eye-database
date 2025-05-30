@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_16" directorySegmentName="seg_0" id="C8E85FC9-DE8D-00CD-C0B4-C863537AD8F2">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 01:39:46 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<sourcePk>11EA3FF9-AD43-363B-3CA5-4C94740A4CD8</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>94504AC8-6393-B994-F40A-CE3462E4FAD9</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4EAC9F0B-7DA6-4C9A-6596-D7B14F9AB1F2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

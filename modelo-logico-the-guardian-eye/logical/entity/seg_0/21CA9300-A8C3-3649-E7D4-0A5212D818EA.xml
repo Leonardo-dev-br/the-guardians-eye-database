@@ -41,18 +41,19 @@
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,5,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nivel" id="27DC9607-8F81-3FEA-8193-8D192E0177C6">
+<Attribute name="id_impacto_classificacao" id="E9CC0799-5318-A130-77AC-0C8F2F127086">
 <createdBy>leona</createdBy>
-<createdTime>2025-05-29 03:00:32 UTC</createdTime>
+<createdTime>2025-05-30 00:57:06 UTC</createdTime>
+<generatorID>2ED0DA3E-DEA3-C42A-2C17-6FA714116CF1</generatorID>
 <ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
 <engineerTo>
 <item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
 </engineerTo>
+<referedAttribute>2D820375-9710-772F-295D-68117ADDB9CE</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

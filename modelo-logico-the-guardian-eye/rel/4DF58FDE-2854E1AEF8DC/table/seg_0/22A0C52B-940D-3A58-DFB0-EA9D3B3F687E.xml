@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="22A0C52B-940D-3A58-DFB0-EA9D3B3F687E" name="TB_TGE_IMPACTO">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>9E18A28C-1D5C-81EE-3A6E-B5B5645A2AD7</generatorID>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_impacto" id="0681A8B1-CE86-FB87-A59C-75E5E4C4DD34">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>CBDBF52E-FC67-7706-F319-67211B122BA3</generatorID>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_impacto_material" id="71160D63-BB99-93D2-8786-CAEFD8D7DCDA">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>CDF6F890-C326-0168-E1A1-CDC1A5AF5F42</generatorID>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EE3C0B4F-0640-7126-8F31-37E2896C6483" referredColumn="CAADDF32-74E6-216A-2972-023A9487B5AB"/>
+</associations>
+</Column>
+<Column name="id_impacto_humano" id="F8CAFD92-6956-0A06-54A7-ED1676834B6C">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>30E521B5-7699-C037-C9CD-757978743835</generatorID>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D1852A9A-131B-B374-9508-92EBF31A7E56" referredColumn="E79C26C3-CAD3-2CE0-D6A4-EE773C63CF9C"/>
+</associations>
+</Column>
+<Column name="impacto" id="522A0782-3621-FD6B-3F89-2EC49781FF9E">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>0F1FD7B6-AAE6-36BD-6721-E330A39147B9</generatorID>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2461DA9F-5B5F-F5FC-E03E-9D0660C16EA8" name="TB_TGE_IMPACTO_PK">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>90D8B599-DB36-7A9E-FB15-E33FA8409328</generatorID>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0681A8B1-CE86-FB87-A59C-75E5E4C4DD34"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="34EBA36A-2901-A515-D562-23F1E3D301D6" name="TB_TGE_IMPACTO_TB_TGE_IMPACTO_MATERIAL_FK">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>49A37C29-22C6-8599-D9C7-2B509CCAD82F</generatorID>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71160D63-BB99-93D2-8786-CAEFD8D7DCDA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F8E2A095-F63E-729C-C008-3847267A94DC" name="TB_TGE_IMPACTO_TB_TGE_IMPACTO_HUMANO_FK">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>4C4A5CDD-79D4-6849-DBF3-C21059134EEC</generatorID>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F8CAFD92-6956-0A06-54A7-ED1676834B6C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

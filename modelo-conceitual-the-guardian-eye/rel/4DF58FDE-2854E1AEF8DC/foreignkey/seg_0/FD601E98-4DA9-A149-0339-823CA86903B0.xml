@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FD601E98-4DA9-A149-0339-823CA86903B0" containerWithKeyObject="9383D58E-ECDC-8CA0-713B-BC436EEE6565" localFKIndex="40DFE86C-11C1-5F20-2654-AC74B0FC2E35" name="TB_TGE_INCENDIO_FLORESTAL_TB_TGE_IMPACTO_CLASSIFICACAO_FK">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<generatorID>4A2B3B15-D508-EF37-FA15-AF9759CFE8E4</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<referredTableLongName>TB_TGE_IMPACTO_CLASSIFICACAO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9EF3D92C-5E0E-08B5-6FB5-E1F24D270D3E</referredTableID>
+<keyObject>7F7873AE-5E49-B0EB-09AC-A2739C3F0006</keyObject>
+<referredKeyID>7F7873AE-5E49-B0EB-09AC-A2739C3F0006</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_impacto_classificacao</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

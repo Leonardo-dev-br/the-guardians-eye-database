@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="378C7964-DA11-FE87-D600-D43FC993878A" name="Relation_14">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TB_TGE_VANT_id_vant" id="A7C19F3C-45A3-1D4E-5FF7-8ADCE5A3012B">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C5BA415E-0A1C-E727-B202-A355047E2319" referredColumn="53C0B40A-C9F6-E6CD-EEE1-E2C09596E027"/>
+</associations>
+</Column>
+<Column name="TB_TGE_DESASTRE_id_desastre" id="840E1E20-CA93-18A4-FE72-8AFDAECFA868">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FAE1E2ED-D99C-7326-E26F-D81E4DEDFDC0" referredColumn="D30CEDFB-547C-55F3-17F1-DE9B0E9F0950"/>
+</associations>
+</Column>
+<Column name="TB_TGE_DESASTRE_id_usuario" id="4F4C869E-23DD-3B4B-30A1-21286481AC95">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A59DB2DB-4BC5-5E86-FA90-6E47FB245A46" name="Relation_14_PK">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7C19F3C-45A3-1D4E-5FF7-8ADCE5A3012B"/>
+<colUsage columnID="840E1E20-CA93-18A4-FE72-8AFDAECFA868"/>
+<colUsage columnID="4F4C869E-23DD-3B4B-30A1-21286481AC95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D0FDA693-4F92-B838-FAB1-A368553F9FA8" name="Relation_14_TB_TGE_VANT_FK">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<generatorID>2DBFB26A-A247-30CF-EAFF-B11BF33F01C8</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7C19F3C-45A3-1D4E-5FF7-8ADCE5A3012B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B0C10E2-7BCD-4CD5-772B-9353286DE3D7" name="Relation_14_TB_TGE_DESASTRE_FK">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<generatorID>2DBFB26A-A247-30CF-EAFF-B11BF33F01C8</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="840E1E20-CA93-18A4-FE72-8AFDAECFA868"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

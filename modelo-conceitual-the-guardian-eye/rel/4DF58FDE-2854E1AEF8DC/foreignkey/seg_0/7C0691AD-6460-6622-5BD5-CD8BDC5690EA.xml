@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7C0691AD-6460-6622-5BD5-CD8BDC5690EA" containerWithKeyObject="7CE8F980-1A3B-6AC9-C6A0-B9196A644D1B" localFKIndex="50BE9188-111C-6D74-DC9B-713E6DC40A90" name="Relation_7_TB_TGE_TERRENO_GEOGRAFICO_FK">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<generatorID>8A34270C-543B-0CC8-39E0-A305DC97369C</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(truly)</ownerDesignName>
+<referredTableLongName>TB_TGE_TERRENO_GEOGRAFICO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>ABBC65C5-625F-1544-C835-D57E20B1426B</referredTableID>
+<keyObject>41F390DD-0463-418E-F903-805F0A5E47FD</keyObject>
+<referredKeyID>41F390DD-0463-418E-F903-805F0A5E47FD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_terreno</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

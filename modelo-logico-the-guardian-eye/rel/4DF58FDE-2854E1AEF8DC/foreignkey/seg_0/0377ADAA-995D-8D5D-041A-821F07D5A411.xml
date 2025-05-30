@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0377ADAA-995D-8D5D-041A-821F07D5A411" containerWithKeyObject="EED6CC68-29C4-C3AC-3CD2-2E087EDB263A" localFKIndex="6FE0D229-BB11-4BEF-1DA4-4922B6B44410" name="TB_TGE_DESASTRE_TB_TGE_GRUPO_DESASTRE_FK">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<generatorID>C8E85FC9-DE8D-00CD-C0B4-C863537AD8F2</generatorID>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<referredTableLongName>TB_TGE_GRUPO_DESASTRE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F1B91194-2AE8-2168-55A9-674C57118784</referredTableID>
+<keyObject>D12D1000-1003-0F5E-485F-7442C6433FD9</keyObject>
+<referredKeyID>D12D1000-1003-0F5E-485F-7442C6433FD9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_grupo_desastre</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

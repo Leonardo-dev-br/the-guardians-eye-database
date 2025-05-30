@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F1B91194-2AE8-2168-55A9-674C57118784" name="TB_TGE_GRUPO_DESASTRE">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>94504AC8-6393-B994-F40A-CE3462E4FAD9</generatorID>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_grupo_desastre" id="ED544D1F-1C35-8750-BE79-6E2C55F25CED">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>A1FF252B-09D0-BC10-EC60-250C5F1CBAA6</generatorID>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_subgrupo" id="CE8BD0CD-3BF4-AA08-9CE1-41511531FCAB">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>8631EE1C-B517-43C0-809F-071A55791EEB</generatorID>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8902174F-3DDF-604F-C00B-D5530EEFD0B2" referredColumn="739C27F2-7E6B-635A-3DC5-6E50E25D351E"/>
+</associations>
+</Column>
+<Column name="grupo" id="5244655A-D4F8-7035-A972-3630722E7AB7">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>3AAA9F5B-5B07-60B7-FBEE-DE0713131D3B</generatorID>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D12D1000-1003-0F5E-485F-7442C6433FD9" name="TB_TGE_GRUPO_DESASTRE_PK">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>11EA3FF9-AD43-363B-3CA5-4C94740A4CD8</generatorID>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED544D1F-1C35-8750-BE79-6E2C55F25CED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D83FECF7-E83E-2A7C-2200-4786814E2075" name="TB_TGE_GRUPO_DESASTRE_TB_TGE_SUBGRUPO_DESASTRE_FK">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<generatorID>C7051291-1793-B368-BCFA-5C2BCB03D3E1</generatorID>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE8BD0CD-3BF4-AA08-9CE1-41511531FCAB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

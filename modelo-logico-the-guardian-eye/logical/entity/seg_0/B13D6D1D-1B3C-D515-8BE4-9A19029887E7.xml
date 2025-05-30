@@ -27,19 +27,6 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="cargo" id="2DEF142D-24B9-0EA5-B67A-9F50B603EED5">
-<createdBy>leona</createdBy>
-<createdTime>2025-05-29 01:48:40 UTC</createdTime>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
-<engineerTo>
-<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="nome_usuario" id="18A2E492-34BA-7129-F07F-2A05D9283FF4">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-29 01:48:54 UTC</createdTime>
@@ -77,6 +64,32 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cargo" id="2DEF142D-24B9-0EA5-B67A-9F50B603EED5">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-29 01:48:40 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="funcao" id="600EDDD3-3846-308C-65CF-B2D175D694B8">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 00:53:50 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="email" id="38DA222D-E91B-E31B-F9DB-968A6706C9DA">
 <createdBy>leona</createdBy>

@@ -40,6 +40,20 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_subgrupo" id="8631EE1C-B517-43C0-809F-071A55791EEB">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 01:38:08 UTC</createdTime>
+<generatorID>C7051291-1793-B368-BCFA-5C2BCB03D3E1</generatorID>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<referedAttribute>5E3BA8D6-0DD0-8B4A-35E1-55222DCB8D7C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="11EA3FF9-AD43-363B-3CA5-4C94740A4CD8" name="TB_TGE_GRUPO_DESASTRE PK">
