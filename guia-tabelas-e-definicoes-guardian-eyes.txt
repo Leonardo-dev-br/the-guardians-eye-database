@@ -35,14 +35,14 @@ TB_TGE_TERRENO_GEOGRAFICO -> É o tipo de terreno onde aconteceu o desastre: Pla
 TB_TGE_ZONA -> Determinada entre: Rural ou Urbana; pelas características: população, porte (pequena, média, grande)
 TB_TGE_GRUPO_DESASTRE -> Geológico, Hidrológico, Meteorológico, Climatológico
 TB_TGE_SUBGRUPO_DESASTRE -> Terremoto, Inundações, Seca
-TB_TGE_TIPO_DESASTRE ->  Deslizamentos, Onda de calor, Seca,  Incêndio florestal
-TB_TGE_SUBTIPO_DESASTRE -> Deslizamentos de solo e/ou rocha, 0, 0, 1. Incêndios em parques, áreas de proteção ambiental e áreas de preservação permanente nacionais, estaduais ou municipais
+*TB_TGE_TIPO_DESASTRE ->  Deslizamentos, Onda de calor, Seca,  Incêndio florestal
+*TB_TGE_SUBTIPO_DESASTRE -> Deslizamentos de solo e/ou rocha, 0, 0, 1. Incêndios em parques, áreas de proteção ambiental e áreas de preservação permanente nacionais, estaduais ou municipais
 TB_TGE_INUNDACAO -> Guarda as características e definições da inundação
 TB_TGE_DESLIZAMENTO -> Guarda as características e definições da deslizamento
 TB_TGE_SECA -> Guarda as características e definições da Seca
 TB_TGE_INCENDIO_FLORESTAL -> Guarda as características e definições da Incêndio Florestal
 TB_TGE_LOCAL -> Onde ocorreu o desastre
-TB_TGE_SENSORES -> Tabela responsável por registrar quais os sensores utilizados para captação
+TB_TGE_SENSORES -> Tabela responsável por registrar quais os sensores utilizados e sua captação
 TB_TGE_VANT -> VANT - Veículo Aéreo Não Tripulado. Tabela responsável por registrar qual aeronave foi utilizada para registro pós desastre
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

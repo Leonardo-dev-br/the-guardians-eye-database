@@ -40,10 +40,14 @@
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>9A7B1BBA-60BB-1085-9D84-515298C491F7</generatorID>
 <ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
+<constraintName>tb_tge_impacto_qtd_mortos_ck</constraintName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="mortos &gt;= 0 "/>
+</checkConstraint>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
