@@ -3,7 +3,7 @@
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>51EC2CEA-2FCA-AE2F-9DB5-DA34F3FE3468</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -12,18 +12,19 @@
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>DCCC498E-F7EB-1F90-0BC6-4DE5F8BA3CE0</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="id_impacto_classificacao" id="CB299232-75F0-21B0-8051-D4CAF01593A9">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>1377123B-2AD7-85AB-23F6-BA0C1E148D57</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -38,7 +39,7 @@
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>CE18BE7C-9FFE-22F1-F6B4-BBA55974586F</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -51,7 +52,7 @@
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>4EBC56E5-0693-200A-B1DB-6BA773C80CEE</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -63,7 +64,7 @@
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>411182CC-8A92-3B7B-241D-CA2EC57AF8CB</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -74,11 +75,11 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="6C8267B9-585A-2AC8-3766-A3C5B5BB8AF4" name="TB_TGE_SECA_PK">
+<ind_PK_UK id="6C8267B9-585A-2AC8-3766-A3C5B5BB8AF4" name="tb_tge_seca_id_seca_pk">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>A762F4D0-4EB4-914E-8834-FA7EC2CA1EBD</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -86,11 +87,11 @@
 <colUsage columnID="389932FD-1781-EBBD-56CD-D78A0A99E5A3"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="415EF065-5A6C-0CE9-81A6-334DC996E196" name="TB_TGE_SECA_TB_TGE_IMPACTO_CLASSIFICACAO_FK">
+<ind_PK_UK id="415EF065-5A6C-0CE9-81A6-334DC996E196" name="tb_tge_seca_id_imp_class_fk">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:52 UTC</createdTime>
 <generatorID>9406FF2F-E891-89EA-8315-D4D8CD9C49A6</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>

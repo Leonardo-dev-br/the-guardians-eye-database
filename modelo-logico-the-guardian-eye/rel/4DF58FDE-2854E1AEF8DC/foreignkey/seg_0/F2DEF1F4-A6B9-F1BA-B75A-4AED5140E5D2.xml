@@ -1,9 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F2DEF1F4-A6B9-F1BA-B75A-4AED5140E5D2" containerWithKeyObject="99A12FF2-825A-A5EF-CB31-C4FFC3E051F0" localFKIndex="E23E9662-CE90-6CD4-A130-31C4A897B88D" name="Relation_13_TB_TGE_SENSORES_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F2DEF1F4-A6B9-F1BA-B75A-4AED5140E5D2" containerWithKeyObject="99A12FF2-825A-A5EF-CB31-C4FFC3E051F0" localFKIndex="E23E9662-CE90-6CD4-A130-31C4A897B88D" name="tb_tge_sensores_id_sensor_fk">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:52 UTC</createdTime>
 <generatorID>2B17D789-FF8C-B1C6-121D-D9FD5B387600</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <referredTableLongName>TB_TGE_SENSORES</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>C2291797-B12F-F4F1-0B66-CC289C720908</referredTableID>

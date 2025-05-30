@@ -3,7 +3,7 @@
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>67519AEF-B7D2-0FCD-3823-499A18E33D17</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -12,18 +12,19 @@
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>F4E0E99C-84C7-B73F-4D02-95B0B6009721</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="terreno" id="1A6E20F9-3D7A-3E40-EA51-E0D67FD254DA">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>9203CD8C-4AB4-9BF5-C737-97457CF4EEBF</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -33,10 +34,10 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="41F390DD-0463-418E-F903-805F0A5E47FD" name="TB_TGE_TERRENO_GEOGRAFICO_PK">
+<ind_PK_UK id="41F390DD-0463-418E-F903-805F0A5E47FD" name="tb_tge_tgeo_id_terreno_pk">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:52 UTC</createdTime>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <indexColumnUsage>

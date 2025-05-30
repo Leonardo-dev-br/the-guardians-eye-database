@@ -3,7 +3,7 @@
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>F944134A-57D6-C3C3-DCFA-A379132436BC</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -12,18 +12,19 @@
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>556D6AA0-B381-264B-5D7A-88FA3CC12437</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="chip" id="2325C089-D50F-4D1E-CEBD-6077B5C84D7F">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>3C70558D-84BC-5514-1554-AEA0984AE9AE</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -35,7 +36,7 @@
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>B1A1AEAE-FF9A-3A3A-997D-1FC6612AEF4C</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -47,7 +48,7 @@
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>A75E3325-EFE0-F483-698E-B0C9A696C4F0</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -60,7 +61,7 @@
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>E10CA247-328B-930A-7A23-47601B292714</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -72,7 +73,7 @@
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>F249D0CB-507E-9194-5B20-135A31E43955</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -84,7 +85,7 @@
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>ABBA1F70-2DDC-F548-C874-0168459BF7D6</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -96,7 +97,7 @@
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>CEB35882-F9FC-ABB0-E869-4C53CBC739D4</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -108,7 +109,7 @@
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>313B79EB-F2DD-D46D-E7AD-E93DBA3B0E59</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -121,7 +122,7 @@
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>50198F3C-76DD-A47A-79F1-DDD917B5DC10</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -132,11 +133,11 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="2311FE2F-B64D-A6B9-510D-23DC68583914" name="TB_TGE_SENSORES_PK">
+<ind_PK_UK id="2311FE2F-B64D-A6B9-510D-23DC68583914" name="tb_tge_sensores_id_sensor_pk">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>8FA629E0-0B08-47B2-7C8C-9836114CEF57</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>

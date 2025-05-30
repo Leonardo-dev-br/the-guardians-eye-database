@@ -3,7 +3,7 @@
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>9E18A28C-1D5C-81EE-3A6E-B5B5645A2AD7</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -12,18 +12,19 @@
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>CBDBF52E-FC67-7706-F319-67211B122BA3</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="id_impacto_material" id="71160D63-BB99-93D2-8786-CAEFD8D7DCDA">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>CDF6F890-C326-0168-E1A1-CDC1A5AF5F42</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -38,7 +39,7 @@
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>30E521B5-7699-C037-C9CD-757978743835</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -53,7 +54,7 @@
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>0F1FD7B6-AAE6-36BD-6721-E330A39147B9</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -63,11 +64,11 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="2461DA9F-5B5F-F5FC-E03E-9D0660C16EA8" name="TB_TGE_IMPACTO_PK">
+<ind_PK_UK id="2461DA9F-5B5F-F5FC-E03E-9D0660C16EA8" name="tb_tge_impacto_impacto_pk">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>90D8B599-DB36-7A9E-FB15-E33FA8409328</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -75,22 +76,22 @@
 <colUsage columnID="0681A8B1-CE86-FB87-A59C-75E5E4C4DD34"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="34EBA36A-2901-A515-D562-23F1E3D301D6" name="TB_TGE_IMPACTO_TB_TGE_IMPACTO_MATERIAL_FK">
+<ind_PK_UK id="34EBA36A-2901-A515-D562-23F1E3D301D6" name="tb_tge_im_id_imp_material_fk">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>49A37C29-22C6-8599-D9C7-2B509CCAD82F</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="71160D63-BB99-93D2-8786-CAEFD8D7DCDA"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F8E2A095-F63E-729C-C008-3847267A94DC" name="TB_TGE_IMPACTO_TB_TGE_IMPACTO_HUMANO_FK">
+<ind_PK_UK id="F8E2A095-F63E-729C-C008-3847267A94DC" name="tb_tge_imp_id_impacto_human_fk">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>4C4A5CDD-79D4-6849-DBF3-C21059134EEC</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>

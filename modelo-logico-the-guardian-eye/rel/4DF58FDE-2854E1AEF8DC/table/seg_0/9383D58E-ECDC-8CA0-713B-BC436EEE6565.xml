@@ -3,7 +3,7 @@
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>7D4435AF-2D1C-9400-E73D-B355917C3600</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -12,18 +12,19 @@
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>5021F59B-2C80-ABFC-8F87-0D14572FA25A</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="id_impacto_classificacao" id="46644638-3A1D-E3E3-BC02-58743702540F">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>935181CF-EAEB-96D7-943C-5BF1ADCAA93A</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -38,7 +39,7 @@
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>BFC435EF-A738-0415-89C0-A3C4F1D459ED</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -50,7 +51,7 @@
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>9DD8C4ED-5037-BFC3-FAF8-76434295F3F0</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -60,11 +61,11 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="9DBD696D-5CF1-B26D-E412-FC0EC0917AC1" name="TB_TGE_INCENDIO_FLORESTAL_PK">
+<ind_PK_UK id="9DBD696D-5CF1-B26D-E412-FC0EC0917AC1" name="tb_tge_incflo_id_incendio_pk">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
 <generatorID>8CFCBA70-FE70-8516-6EC5-3331F98DF7DB</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -72,11 +73,11 @@
 <colUsage columnID="7AF08BC5-9B29-58F5-8912-5F75FA113D3D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="40DFE86C-11C1-5F20-2654-AC74B0FC2E35" name="TB_TGE_INCENDIO_FLORESTAL_TB_TGE_IMPACTO_CLASSIFICACAO_FK">
+<ind_PK_UK id="40DFE86C-11C1-5F20-2654-AC74B0FC2E35" name="tb_tge_incflo_id_im_class_fk">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:52 UTC</createdTime>
 <generatorID>4A2B3B15-D508-EF37-FA15-AF9759CFE8E4</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>

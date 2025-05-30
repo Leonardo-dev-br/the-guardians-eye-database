@@ -1,9 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E91A7877-4ABF-589F-4085-408FA9DFA6A9" containerWithKeyObject="C6BA66CF-8DA4-CA44-1313-D34600EE6819" localFKIndex="1A7D1BA6-E1E4-C368-8CBC-C0AE139C1197" name="TB_TGE_DESLIZAMENTO_TB_TGE_IMPACTO_CLASSIFICACAO_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E91A7877-4ABF-589F-4085-408FA9DFA6A9" containerWithKeyObject="C6BA66CF-8DA4-CA44-1313-D34600EE6819" localFKIndex="1A7D1BA6-E1E4-C368-8CBC-C0AE139C1197" name="tb_tge_des_id_impacto_class_fk">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:52 UTC</createdTime>
 <generatorID>2ED0DA3E-DEA3-C42A-2C17-6FA714116CF1</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <referredTableLongName>TB_TGE_IMPACTO_CLASSIFICACAO</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>9EF3D92C-5E0E-08B5-6FB5-E1F24D270D3E</referredTableID>
