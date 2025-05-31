@@ -58,7 +58,7 @@ DROP TABLE tb_tge_zona CASCADE CONSTRAINTS;
 
 
 
-                                                                            SEQUENCE
+                                                              
 DROP SEQUENCE tb_tge_desastre_id_desastre_seq;
 
 DROP SEQUENCE tb_tge_desas_sensor_id_de_seq;
@@ -101,10 +101,7 @@ DROP SEQUENCE tb_tge_usuario_id_usuario_seq;
 
 DROP SEQUENCE tb_tge_vant_id_vant_seq;
 
-DROP SEQUENCE tb_tge_vant_id_vant_seq;
-
 */
-
 
 CREATE TABLE tb_tge_desastre (
     id_desastre       INTEGER NOT NULL,
@@ -186,13 +183,11 @@ ALTER TABLE tb_tge_impacto_classificacao ADD CONSTRAINT tb_tge_ic_id_impacto_cla
 CREATE TABLE tb_tge_impacto_humano (
     id_impacto_humano        INTEGER NOT NULL,
     id_impacto_classificacao INTEGER NOT NULL,
-    mortos                   INTEGER,
     quantidade_afetados      INTEGER NOT NULL,
     estado_afetados          VARCHAR2(150) NOT NULL,
     suporte_internacional    INTEGER NOT NULL
 );
 
-ALTER TABLE tb_tge_impacto_humano ADD CONSTRAINT tb_tge_impacto_qtd_mortos_ck CHECK ( mortos >= 0 );
 
 ALTER TABLE tb_tge_impacto_humano ADD CONSTRAINT tb_tge_im_id_impacto_humano_pk PRIMARY KEY ( id_impacto_humano );
 
@@ -200,7 +195,6 @@ CREATE TABLE tb_tge_impacto_material (
     id_impacto_material      INTEGER NOT NULL,
     id_impacto_classificacao INTEGER NOT NULL,
     danos_materiais          VARCHAR2(75) NOT NULL,
-    preco_bruto              NUMBER(20, 2) NOT NULL,
     impacto_ambiental        VARCHAR2(150) NOT NULL
 );
 
@@ -662,7 +656,7 @@ END;
 
 CREATE SEQUENCE tb_tge_zona_id_zona_seq START WITH 1 NOCACHE ORDER;
 
-CREATE OR REPLACE TRIGGER tb_tge_zona_id_zona_trg BEFORE
+CREATE OR REPLACE TRIGGER tb_tge_zona_id_zona_seq BEFORE
     INSERT ON tb_tge_zona
     FOR EACH ROW
     WHEN ( new.id_zona IS NULL )

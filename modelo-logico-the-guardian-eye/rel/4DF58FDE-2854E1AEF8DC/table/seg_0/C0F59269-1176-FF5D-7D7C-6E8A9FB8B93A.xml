@@ -35,22 +35,6 @@
 <colAssociation fkAssociation="671C3BF0-90F2-5FA6-207F-14B718B16BD5" referredColumn="5F1D8242-F9E0-FEB9-E49F-6DF3A0717EF0"/>
 </associations>
 </Column>
-<Column name="mortos" id="DFD91B24-29C7-209F-76ED-B3E992E5DC2E">
-<createdBy>leona</createdBy>
-<createdTime>2025-05-30 02:22:51 UTC</createdTime>
-<generatorID>9A7B1BBA-60BB-1085-9D84-515298C491F7</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
-<constraintName>tb_tge_impacto_qtd_mortos_ck</constraintName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<checkConstraint>
-<implementationDef dbType="Generic Constraint" definition="mortos &gt;= 0 "/>
-</checkConstraint>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="quantidade_afetados" id="B96E15BC-A1FE-9AB2-3E5F-1B996ED08593">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>

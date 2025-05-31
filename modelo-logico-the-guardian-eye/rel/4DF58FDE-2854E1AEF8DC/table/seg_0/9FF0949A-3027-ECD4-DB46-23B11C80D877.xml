@@ -47,19 +47,6 @@
 <ownDataTypeParameters>75,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="preco_bruto" id="40ABCD36-1466-2444-F5B4-7EEA7D28B7A9">
-<createdBy>leona</createdBy>
-<createdTime>2025-05-30 02:22:51 UTC</createdTime>
-<generatorID>B3D22796-59B7-552F-FDD2-25BE70665874</generatorID>
-<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>20</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,20,2</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="impacto_ambiental" id="40F260C4-D567-7425-ECEC-4BE122B42AC9">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 02:22:51 UTC</createdTime>
