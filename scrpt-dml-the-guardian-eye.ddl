@@ -101,7 +101,43 @@ DROP SEQUENCE tb_tge_usuario_id_usuario_seq;
 
 DROP SEQUENCE tb_tge_vant_id_vant_seq;
 
+
+DROP PROCEDURE inserir_tb_tge_imagens_capturadas_procedure;
+
+DROP PROCEDURE inserir_tb_tge_impacto_classificacao_procedure;
+
+DROP PROCEDURE inserir_tb_tge_impacto_humano_procedure;
+
+DROP PROCEDURE inserir_tb_tge_impacto_material_procedure;
+
+DROP PROCEDURE inserir_tb_tge_impacto_procedure;
+
+DROP PROCEDURE inserir_tb_tge_local_procedure;
+
+DROP PROCEDURE inserir_tb_tge_sensores_procedure;
+
+DROP PROCEDURE inserir_tb_tge_subgrupo_desastre_procedure;
+
+DROP PROCEDURE inserir_tb_tge_usuario_procedure;
+
+DROP PROCEDURE inserir_tb_tge_vant_procedure;
+
+DROP PROCEDURE inserir_tb_tge_zona_procedure;
+
+DROP PROCEDURE inserir_terreno_geografico;
+
+DROP PROCEDURE ;
+
+DROP PROCEDURE ;
+
+DROP PROCEDURE ;
+
+DROP PROCEDURE ;
+
+DROP PROCEDURE ;
+
 */
+
 
 CREATE TABLE tb_tge_desastre (
     id_desastre       INTEGER NOT NULL,
