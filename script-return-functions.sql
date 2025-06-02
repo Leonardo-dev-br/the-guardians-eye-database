@@ -1,3 +1,12 @@
+/*
+Turma: 2TDSPX
+Grupo: MONT CLIO
+Nome Projeto: THE GUARDIANS EYE
+Integrantes: LEONARDO P SANTOS - RM557541
+             PEDRO H LIMA SANTOS - RM558243
+             VITOR GOMES - RM558244
+*/
+
 --FUNÇÃO 1 -> Classificação Nível de Alerta
 CREATE OR REPLACE FUNCTION fn_classificar_nivel_alerta (
     p_pluviosidade IN NUMBER,    
