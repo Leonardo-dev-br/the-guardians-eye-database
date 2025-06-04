@@ -9,7 +9,7 @@ Integrantes: LEONARDO P SANTOS - RM557541
 
 
 /*
-                                                                         SEÇÃO DE DROPS
+                                                                         SEï¿½ï¿½O DE DROPS
 DROP TABLE tb_tge_desastre CASCADE CONSTRAINTS;
 
 DROP TABLE tb_tge_desastre_sensores CASCADE CONSTRAINTS;
@@ -102,7 +102,21 @@ DROP SEQUENCE tb_tge_usuario_id_usuario_seq;
 DROP SEQUENCE tb_tge_vant_id_vant_seq;
 
 
+DROP PROCEDURE inserir_terreno_geografico_procedure;
+
+DROP PROCEDURE inserir_tb_tge_usuario_procedure;
+
+DROP PROCEDURE inserir_tb_tge_local_procedure;
+
+DROP PROCEDURE inserir_tb_tge_subgrupo_desastre_procedure;
+
+DROP PROCEDURE inserir_tb_tge_vant_procedure;
+
 DROP PROCEDURE inserir_tb_tge_imagens_capturadas_procedure;
+
+DROP PROCEDURE inserir_tb_tge_zona_procedure;
+
+DROP PROCEDURE inserir_tb_tge_sensores_procedure;
 
 DROP PROCEDURE inserir_tb_tge_impacto_classificacao_procedure;
 
@@ -112,29 +126,27 @@ DROP PROCEDURE inserir_tb_tge_impacto_material_procedure;
 
 DROP PROCEDURE inserir_tb_tge_impacto_procedure;
 
-DROP PROCEDURE inserir_tb_tge_local_procedure;
+DROP PROCEDURE inserir_tge_desastre_procedure;
 
-DROP PROCEDURE inserir_tb_tge_sensores_procedure;
+DROP PROCEDURE inserir_tb_tge_terreno_desastre_procedure;
 
-DROP PROCEDURE inserir_tb_tge_subgrupo_desastre_procedure;
+DROP PROCEDURE inserir_tb_tge_grupo_desastre_procedure;
 
-DROP PROCEDURE inserir_tb_tge_usuario_procedure;
+DROP PROCEDURE inserir_tb_tge_vant_imagens_procedure;
 
-DROP PROCEDURE inserir_tb_tge_vant_procedure;
+DROP PROCEDURE inserir_tb_tge_desastre_vant_procedure;
 
-DROP PROCEDURE inserir_tb_tge_zona_procedure;
+DROP SEQUENCE inserir_tb_tge_desastre_zona_procedure;
 
-DROP PROCEDURE inserir_terreno_geografico;
+DROP SEQUENCE inserir_tb_tge_incendio_florestal_procedure;
 
-DROP PROCEDURE ;
+DROP SEQUENCE inserir_tb_tge_deslizamento_procedure;
 
-DROP PROCEDURE ;
+DROP SEQUENCE inserir_tb_tge_inundacao_procedure;
 
-DROP PROCEDURE ;
+DROP SEQUENCE inserir_tb_tge_seca_procedure;
 
-DROP PROCEDURE ;
-
-DROP PROCEDURE ;
+DROP SEQUENCE inserir_tb_tge_desastre_sensores_procedure;
 
 */
 
@@ -259,7 +271,9 @@ CREATE TABLE tb_tge_local (
     cep       INTEGER NOT NULL,
     endereco  VARCHAR2(125) NOT NULL,
     municipio VARCHAR2(75) NOT NULL,
-    numero    INTEGER NOT NULL
+    numero    INTEGER NOT NULL,
+    longitude NUMBER(17, 2) NOT NULL,
+    latitude NUMBER(14, 2) NOT NULL
 );
 
 ALTER TABLE tb_tge_local ADD CONSTRAINT tb_tge_local_id_local_pk PRIMARY KEY ( id_local );
@@ -593,7 +607,7 @@ END;
 
 CREATE SEQUENCE tb_tge_local_id_local_seq START WITH 1 NOCACHE ORDER;
 
-CREATE OR REPLACE TRIGGER tb_tge_local_id_local_trg BEFORE
+CREATE OR REPLACE TRIGGER tb_tge_local_id_local_seq BEFORE
     INSERT ON tb_tge_local
     FOR EACH ROW
     WHEN ( new.id_local IS NULL )
@@ -604,7 +618,7 @@ END;
 
 CREATE SEQUENCE tb_tge_seca_id_seca_seq START WITH 1 NOCACHE ORDER;
 
-CREATE OR REPLACE TRIGGER tb_tge_seca_id_seca_trg BEFORE
+CREATE OR REPLACE TRIGGER tb_tge_seca_id_seca_seq BEFORE
     INSERT ON tb_tge_seca
     FOR EACH ROW
     WHEN ( new.id_seca IS NULL )
@@ -615,7 +629,7 @@ END;
 
 CREATE SEQUENCE tb_tge_sensores_id_sensor_seq START WITH 1 NOCACHE ORDER;
 
-CREATE OR REPLACE TRIGGER tb_tge_sensores_id_sensor_trg BEFORE
+CREATE OR REPLACE TRIGGER tb_tge_sensores_id_sensor_seq BEFORE
     INSERT ON tb_tge_sensores
     FOR EACH ROW
     WHEN ( new.id_sensor IS NULL )
@@ -659,7 +673,7 @@ END;
 
 CREATE SEQUENCE tb_tge_usuario_id_usuario_seq START WITH 1 NOCACHE ORDER;
 
-CREATE OR REPLACE TRIGGER tb_tge_usuario_id_usuario_trg BEFORE
+CREATE OR REPLACE TRIGGER tb_tge_usuario_id_usuario_seq BEFORE
     INSERT ON tb_tge_usuario
     FOR EACH ROW
     WHEN ( new.id_usuario IS NULL )
@@ -670,7 +684,7 @@ END;
 
 CREATE SEQUENCE tb_tge_vant_id_vant_seq START WITH 1 NOCACHE ORDER;
 
-CREATE OR REPLACE TRIGGER tb_tge_vant_id_vant_trg BEFORE
+CREATE OR REPLACE TRIGGER tb_tge_vant_id_vant_seq BEFORE
     INSERT ON tb_tge_vant
     FOR EACH ROW
     WHEN ( new.id_vant IS NULL )

@@ -7,8 +7,8 @@ Integrantes: LEONARDO P SANTOS - RM557541
              VITOR GOMES - RM558244
 */
 
+SET SERVEROUTPUT ON
 -- INSERÇÃO
-
 --Terrno Geografico
 CREATE OR REPLACE PROCEDURE inserir_terreno_geografico_procedure (
     p_terreno IN VARCHAR2
