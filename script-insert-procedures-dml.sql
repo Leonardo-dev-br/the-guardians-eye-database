@@ -548,7 +548,7 @@ BEGIN
         danos_materiais,
         impacto_ambiental
     ) VALUES (
-        NULL, -- será preenchido pela trigger
+        NULL,
         p_id_impacto_classificacao,
         p_danos_materiais,
         p_impacto_ambiental
@@ -586,7 +586,7 @@ BEGIN
         id_impacto_humano,
         impacto
     ) VALUES (
-        NULL, -- será gerado pela trigger
+        NULL,
         p_id_impacto_material,
         p_id_impacto_humano,
         p_impacto
@@ -612,4 +612,481 @@ END;
 /
 
 
-select * from tb_tge_impacto
+--Desastre
+CREATE OR REPLACE PROCEDURE inserir_tge_desastre_procedure (
+    p_id_desastre       IN tb_tge_desastre.id_desastre%TYPE,
+    p_id_local          IN tb_tge_desastre.id_local%TYPE,
+    p_id_impacto        IN tb_tge_desastre.id_impacto%TYPE,
+    p_id_grupo_desastre IN tb_tge_desastre.id_grupo_desastre%TYPE,
+    p_id_usuario        IN tb_tge_desastre.id_usuario%TYPE,
+    p_cobrade           IN tb_tge_desastre.cobrade%TYPE,
+    p_data_ocorrencia   IN tb_tge_desastre.data_ocorrencia%TYPE
+)
+IS
+BEGIN
+    INSERT INTO tb_tge_desastre (
+        id_local,
+        id_impacto,
+        id_grupo_desastre,
+        id_usuario,
+        cobrade,
+        data_ocorrencia
+    )
+    VALUES (
+        p_id_local,
+        p_id_impacto,
+        p_id_grupo_desastre,
+        p_id_usuario,
+        p_cobrade,
+        p_data_ocorrencia
+    );
+
+    COMMIT;
+
+    DBMS_OUTPUT.PUT_LINE('Inserção realizada com sucesso na tb_tge_desastre. ID: ' || p_id_desastre);
+
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro ao inserir na tb_tge_desastre: ' || SQLERRM);
+END;
+/
+
+BEGIN
+  inserir_tge_desastre_procedure(
+    p_id_local          => 1,
+    p_id_impacto        => 1,
+    p_id_grupo_desastre => 1,
+    p_id_usuario        => 1,
+    p_cobrade           => 11110,
+    p_data_ocorrencia   => TO_DATE('2025-06-03', 'YYYY-MM-DD')
+  );
+  
+  inserir_tge_desastre_procedure(
+    p_id_local          => 1,
+    p_id_impacto        => 2,
+    p_id_grupo_desastre => 1,
+    p_id_usuario        => 2,
+    p_cobrade           => 12110,
+    p_data_ocorrencia   => TO_DATE('2025-06-03', 'YYYY-MM-DD')
+  );
+  
+   inserir_tge_desastre_procedure(
+    p_id_local          => 1,
+    p_id_impacto        => 1,
+    p_id_grupo_desastre => 4,
+    p_id_usuario        => 3,
+    p_cobrade           => 11410,
+    p_data_ocorrencia   => TO_DATE('2025-06-11', 'YYYY-MM-DD')
+  );
+  
+  tinserir_tge_desastre_procedure(
+    p_id_local          => 1,
+    p_id_impacto        => 3,
+    p_id_grupo_desastre => 1,
+    p_id_usuario        => 4,
+    p_cobrade           => 13110,
+    p_data_ocorrencia   => TO_DATE('2025-08-22', 'YYYY-MM-DD')
+  );
+  
+  inserir_tge_desastre_procedure(
+    p_id_local          => 1,
+    p_id_impacto        => 2,
+    p_id_grupo_desastre => 3,
+    p_id_usuario        => 5,
+    p_cobrade           => 12310,
+    p_data_ocorrencia   => TO_DATE('2025-08-30', 'YYYY-MM-DD')
+  );
+  
+  inserir_tge_desastre_procedure(
+    p_id_local          => 1,
+    p_id_impacto        => 3,
+    p_id_grupo_desastre => 2,
+    p_id_usuario        => 6,
+    p_cobrade           => 13210,
+    p_data_ocorrencia   => TO_DATE('2025-08-13', 'YYYY-MM-DD')
+  );
+  
+END;
+/
+
+
+--Terreno Desastre
+
+CREATE OR REPLACE PROCEDURE inserir_tb_tge_terreno_desastre_procedure (
+  p_id_desastre IN NUMBER,
+  p_id_terreno IN NUMBER
+)
+IS
+BEGIN
+  INSERT INTO tb_tge_terreno_desastre (
+    id_desastre,
+    id_terreno
+  ) VALUES (
+    p_id_desastre,
+    p_id_terreno
+  );
+
+  COMMIT;
+
+  DBMS_OUTPUT.PUT_LINE('Inserção realizada com sucesso: ' || p_id_terreno_desastre);
+
+EXCEPTION
+  WHEN OTHERS THEN
+    DBMS_OUTPUT.PUT_LINE('Erro ao inserir' || p_id_terreno_desastre || ': ' || SQLERRM);
+END;
+
+BEGIN
+  inserir_tb_tge_terreno_desastre_procedure(1, 1);
+  inserir_tb_tge_terreno_desastre_procedure(2, 2);
+  inserir_tb_tge_terreno_desastre_procedure(3, 3);
+  inserir_tb_tge_terreno_desastre_procedure(4, 4);
+  inserir_tb_tge_terreno_desastre_procedure(5, 5);
+  inserir_tb_tge_terreno_desastre_procedure(6, 6);
+  inserir_tb_tge_terreno_desastre_procedure(7, 7);
+END;
+
+
+--Grupo Desastre
+CREATE OR REPLACE PROCEDURE inserir_tb_tge_grupo_desastre_procedure (
+  p_id_grupo_desastre IN NUMBER,
+  p_id_subgrupo       IN NUMBER,
+  p_grupo             IN VARCHAR2
+)
+IS
+BEGIN
+  INSERT INTO tb_tge_grupo_desastre (
+    id_grupo_desastre,
+    id_subgrupo,
+    grupo
+  ) VALUES (
+    p_id_grupo_desastre,
+    p_id_subgrupo,
+    p_grupo
+  );
+
+  COMMIT;
+
+  DBMS_OUTPUT.PUT_LINE('Inserção realizada com sucesso: ' || p_id_grupo_desastre);
+
+EXCEPTION
+  WHEN OTHERS THEN
+    DBMS_OUTPUT.PUT_LINE('Erro ao inserir E ' || p_id_grupo_desastre || ': ' || SQLERRM);
+END;
+/
+
+
+BEGIN
+  inserir_tb_tge_grupo_desastre_procedure(1, 1, 'Inundações Urbanas');
+  inserir_tb_tge_grupo_desastre_procedure(2, 1, 'Inundações Rurais');
+  inserir_tb_tge_grupo_desastre_procedure(3, 2, 'Deslizamento em Encostas');
+  inserir_tb_tge_grupo_desastre_procedure(4, 2, 'Desmoronamento de Rochas');
+  inserir_tb_tge_grupo_desastre_procedure(5, 3, 'Secas Agrícolas');
+  inserir_tb_tge_grupo_desastre_procedure(6, 3, 'Estresse Hídrico');
+  inserir_tb_tge_grupo_desastre_procedure(7, 4, 'Ciclones Tropicais');
+END;
+/
+
+
+--Vant Imagem
+CREATE OR REPLACE PROCEDURE inserir_tb_tge_vant_imagens_procedure (
+  p_id_imagem IN NUMBER,
+  p_id_vant   IN NUMBER
+)
+IS
+BEGIN
+  INSERT INTO tb_tge_vant_imagens (
+    id_imagem,
+    id_vant
+  ) VALUES (
+    p_id_imagem,
+    p_id_vant
+  );
+
+  COMMIT;
+
+  DBMS_OUTPUT.PUT_LINE('Inserção realizada com sucesso para IMAGEM ID: ' || p_id_imagem || ' e VANT ID: ' || p_id_vant);
+
+EXCEPTION
+  WHEN OTHERS THEN
+    DBMS_OUTPUT.PUT_LINE('Erro ao inserir IMAGEM ID: ' || p_id_imagem || ', VANT ID: ' || p_id_vant || ': ' || SQLERRM);
+END;
+/
+
+BEGIN
+  inserir_tb_tge_vant_imagens_procedure(1, 1);
+  inserir_tb_tge_vant_imagens_procedure(2, 1);
+  inserir_tb_tge_vant_imagens_procedure(3, 2);
+  inserir_tb_tge_vant_imagens_procedure(4, 2);
+  inserir_tb_tge_vant_imagens_procedure(5, 3);
+  inserir_tb_tge_vant_imagens_procedure(6, 3);
+  inserir_tb_tge_vant_imagens_procedure(7, 4);
+END;
+/
+
+
+--Desastre Vant
+CREATE OR REPLACE PROCEDURE inserir_tb_tge_desastre_vant_procedure (
+  p_id_desastre IN NUMBER,
+  p_id_vant     IN NUMBER
+)
+IS
+BEGIN
+  INSERT INTO tb_tge_desastre_vant (
+    id_desastre,
+    id_vant
+  ) VALUES (
+    p_id_desastre,
+    p_id_vant
+  );
+
+  COMMIT;
+
+  DBMS_OUTPUT.PUT_LINE('Inserção realizada com sucesso para DESASTRE ID: ' || p_id_desastre || ' e VANT ID: ' || p_id_vant);
+
+EXCEPTION
+  WHEN OTHERS THEN
+    DBMS_OUTPUT.PUT_LINE('Erro ao inserir DESASTRE ID: ' || p_id_desastre || ', VANT ID: ' || p_id_vant || ': ' || SQLERRM);
+END;
+/
+
+BEGIN
+  inserir_tb_tge_desastre_vant_procedure(1, 1);
+  inserir_tb_tge_desastre_vant_procedure(2, 1);
+  inserir_tb_tge_desastre_vant_procedure(3, 2);
+  inserir_tb_tge_desastre_vant_procedure(4, 2);
+  inserir_tb_tge_desastre_vant_procedure(5, 3);
+  inserir_tb_tge_desastre_vant_procedure(6, 3);
+  inserir_tb_tge_desastre_vant_procedure(7, 4);
+END;
+/
+
+
+--Desastre Zona
+CREATE OR REPLACE PROCEDURE inserir_tb_tge_desastre_zona_procedure (
+  p_id_zona     IN NUMBER,
+  p_id_desastre IN NUMBER
+)
+IS
+BEGIN
+  INSERT INTO tb_tge_desastre_zona (
+    id_zona,
+    id_desastre
+  ) VALUES (
+    p_id_zona,
+    p_id_desastre
+  );
+
+  COMMIT;
+
+  DBMS_OUTPUT.PUT_LINE('Inserção realizada com sucesso para ZONA ID: ' || p_id_zona || ' e DESASTRE ID: ' || p_id_desastre);
+
+EXCEPTION
+  WHEN OTHERS THEN
+    DBMS_OUTPUT.PUT_LINE('Erro ao inserir ZONA ID: ' || p_id_zona || ', DESASTRE ID: ' || p_id_desastre || ': ' || SQLERRM);
+END;
+/
+
+BEGIN
+  inserir_tb_tge_desastre_zona_procedure(1, 1);
+  inserir_tb_tge_desastre_zona_procedure(1, 2);
+  inserir_tb_tge_desastre_zona_procedure(2, 3);
+  inserir_tb_tge_desastre_zona_procedure(2, 4);
+  inserir_tb_tge_desastre_zona_procedure(3, 5);
+  inserir_tb_tge_desastre_zona_procedure(3, 6);
+  inserir_tb_tge_desastre_zona_procedure(4, 7);
+END;
+/
+
+--Incêndio
+CREATE OR REPLACE PROCEDURE inserir_tb_tge_incendio_florestal_procedure (
+  p_id_impacto_classificacao IN NUMBER,
+  p_causa                    IN VARCHAR2,
+  p_tipo_incendio            IN VARCHAR2
+)
+IS
+BEGIN
+  INSERT INTO tb_tge_incendio_florestal (
+    id_impacto_classificacao,
+    causa,
+    tipo_incendio
+  ) VALUES (
+    p_id_impacto_classificacao,
+    p_causa,
+    p_tipo_incendio
+  );
+
+  COMMIT;
+
+  DBMS_OUTPUT.PUT_LINE('Inserção realizada com sucesso: CAUSA = ' || p_causa || ', TIPO = ' || p_tipo_incendio);
+
+EXCEPTION
+  WHEN OTHERS THEN
+    DBMS_OUTPUT.PUT_LINE('Erro ao inserir incêndio florestal: ' || SQLERRM);
+END;
+/
+
+BEGIN
+  inserir_tb_tge_incendio_florestal_procedure(1, 'Raio durante tempestade seca', 'Superficial');
+  inserir_tb_tge_incendio_florestal_procedure(2, 'Queimada agrícola descontrolada', 'Subterrâneo');
+  inserir_tb_tge_incendio_florestal_procedure(3, 'Fogueira deixada por campistas', 'Copa das árvores');
+  inserir_tb_tge_incendio_florestal_procedure(1, 'Curto-circuito em rede elétrica rural', 'Superficial');
+  inserir_tb_tge_incendio_florestal_procedure(2, 'Ação criminosa deliberada', 'Subterrâneo');
+  inserir_tb_tge_incendio_florestal_procedure(4, 'Explosão de tanque de combustível', 'Copa das árvores');
+  inserir_tb_tge_incendio_florestal_procedure(3, 'Fumaça de fogão a lenha em dia seco', 'Superficial');
+END;
+/
+
+--Deslizamento
+CREATE OR REPLACE PROCEDURE inserir_tb_tge_deslizamento_procedure (
+  p_id_impacto_classificacao IN NUMBER,
+  p_umidade_solo             IN NUMBER
+)
+IS
+BEGIN
+  INSERT INTO tb_tge_deslizamento (
+    id_impacto_classificacao,
+    umidade_solo
+  ) VALUES (
+    p_id_impacto_classificacao,
+    p_umidade_solo
+  );
+
+  COMMIT;
+
+  DBMS_OUTPUT.PUT_LINE('Inserção realizada com sucesso: Impacto Classificação = ' || p_id_impacto_classificacao || ', Umidade do Solo = ' || p_umidade_solo);
+
+EXCEPTION
+  WHEN OTHERS THEN
+    DBMS_OUTPUT.PUT_LINE('Erro ao inserir deslizamento: ' || SQLERRM);
+END;
+/
+
+BEGIN
+  inserir_tb_tge_deslizamento_procedure(1, 88.5);
+  inserir_tb_tge_deslizamento_procedure(2, 91.2);
+  inserir_tb_tge_deslizamento_procedure(3, 86.7);
+  inserir_tb_tge_deslizamento_procedure(4, 93.1);
+  inserir_tb_tge_deslizamento_procedure(2, 89.4);
+  inserir_tb_tge_deslizamento_procedure(1, 95.0);
+  inserir_tb_tge_deslizamento_procedure(3, 87.9);
+END;
+/
+
+
+--Inundação
+CREATE OR REPLACE PROCEDURE inserir_tb_tge_inundacao_procedure (
+  p_id_impacto_classificacao IN NUMBER,
+  p_causa                    IN VARCHAR2,
+  p_metros                   IN NUMBER
+)
+IS
+BEGIN
+  INSERT INTO tb_tge_inundacao (
+    id_impacto_classificacao,
+    causa,
+    metros
+  ) VALUES (
+    p_id_impacto_classificacao,
+    p_causa,
+    p_metros
+  );
+
+  COMMIT;
+
+  DBMS_OUTPUT.PUT_LINE('Inserção realizada com sucesso: Impacto Classificação = ' || p_id_impacto_classificacao || ', Causa = ' || p_causa || ', Metros = ' || p_metros);
+
+EXCEPTION
+  WHEN OTHERS THEN
+    DBMS_OUTPUT.PUT_LINE('Erro ao inserir inundação: ' || SQLERRM);
+END;
+/
+
+BEGIN
+  inserir_tb_tge_inundacao_procedure(1, 'Chuvas intensas na serra', 3.75);
+  inserir_tb_tge_inundacao_procedure(2, 'Transbordamento de rio urbano', 2.40);
+  inserir_tb_tge_inundacao_procedure(3, 'Obstrução de galerias pluviais', 1.95);
+  inserir_tb_tge_inundacao_procedure(1, 'Rompimento de barragem', 4.85);
+  inserir_tb_tge_inundacao_procedure(4, 'Acúmulo de água em área de várzea', 2.15);
+  inserir_tb_tge_inundacao_procedure(2, 'Elevação do nível do mar em zona costeira', 3.20);
+  inserir_tb_tge_inundacao_procedure(3, 'Falha no sistema de drenagem urbana', 1.80);
+END;
+/
+
+
+--Seca
+CREATE OR REPLACE PROCEDURE inserir_tb_tge_seca_procedure (
+  p_id_impacto_classificacao IN NUMBER,
+  p_temperatura              IN NUMBER,
+  p_medida                   IN VARCHAR2,
+  p_umidade_solo             IN NUMBER
+)
+IS
+BEGIN
+  INSERT INTO tb_tge_seca (
+    id_impacto_classificacao,
+    temperatura,
+    medida,
+    umidade_solo
+  ) VALUES (
+    p_id_impacto_classificacao,
+    p_temperatura,
+    p_medida,
+    p_umidade_solo
+  );
+
+  COMMIT;
+
+  DBMS_OUTPUT.PUT_LINE('Inserção realizada com sucesso: Impacto = ' || p_id_impacto_classificacao || ', Temp = ' || p_temperatura || p_medida || ', Umidade = ' || p_umidade_solo);
+
+EXCEPTION
+  WHEN OTHERS THEN
+    DBMS_OUTPUT.PUT_LINE('Erro ao inserir seca: ' || SQLERRM);
+END;
+/
+
+BEGIN
+  inserir_tb_tge_seca_procedure(1, 38.50, '°C', 5.20);
+  inserir_tb_tge_seca_procedure(2, 40.25, '°C', 3.80);
+  inserir_tb_tge_seca_procedure(3, 37.10, '°C', 6.45);
+  inserir_tb_tge_seca_procedure(2, 42.00, '°C', 2.10);
+  inserir_tb_tge_seca_procedure(1, 39.75, '°C', 4.25);
+  inserir_tb_tge_seca_procedure(3, 41.30, '°C', 1.95);
+  inserir_tb_tge_seca_procedure(4, 36.80, '°C', 7.10);
+END;
+/
+
+--Desastre Sensores
+CREATE OR REPLACE PROCEDURE inserir_tb_tge_desastre_sensores_procedure (
+  p_id_sensor   IN NUMBER,
+  p_id_desastre IN NUMBER
+)
+IS
+BEGIN
+  INSERT INTO tb_tge_desastre_sensores (
+    id_sensor,
+    id_desastre
+  ) VALUES (
+    p_id_sensor,
+    p_id_desastre
+  );
+
+  COMMIT;
+
+  DBMS_OUTPUT.PUT_LINE('Associação inserida com sucesso: Sensor ID = ' || p_id_sensor || ', Desastre ID = ' || p_id_desastre);
+
+EXCEPTION
+  WHEN OTHERS THEN
+    DBMS_OUTPUT.PUT_LINE('Erro ao associar sensor ao desastre: ' || SQLERRM);
+END;
+/
+
+BEGIN
+  inserir_tb_tge_desastre_sensores_procedure(101, 201);
+  inserir_tb_tge_desastre_sensores_procedure(102, 202);
+  inserir_tb_tge_desastre_sensores_procedure(103, 203);
+  inserir_tb_tge_desastre_sensores_procedure(104, 204);
+  inserir_tb_tge_desastre_sensores_procedure(105, 205);
+  inserir_tb_tge_desastre_sensores_procedure(106, 206);
+  inserir_tb_tge_desastre_sensores_procedure(107, 207);
+END;
+/
