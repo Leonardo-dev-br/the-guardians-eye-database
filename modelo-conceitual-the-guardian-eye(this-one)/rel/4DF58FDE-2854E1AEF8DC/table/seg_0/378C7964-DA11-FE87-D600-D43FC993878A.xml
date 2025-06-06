@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="378C7964-DA11-FE87-D600-D43FC993878A" name="TB_TGE_DESASTRE_VANT">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<ordsAlias>relation_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_desastre_vant" id="A7C19F3C-45A3-1D4E-5FF7-8ADCE5A3012B">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_desastre" id="840E1E20-CA93-18A4-FE72-8AFDAECFA868">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FAE1E2ED-D99C-7326-E26F-D81E4DEDFDC0" referredColumn="D30CEDFB-547C-55F3-17F1-DE9B0E9F0950"/>
+</associations>
+</Column>
+<Column name="id_vant" id="2E6E4D2C-0737-06C4-B972-AA3E63CDC48B">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 04:06:23 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0C823584-06F5-3FAC-CD10-C133281C33D6" referredColumn="53C0B40A-C9F6-E6CD-EEE1-E2C09596E027"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A59DB2DB-4BC5-5E86-FA90-6E47FB245A46" name="tb_tge_devant_id_desas_vant_pf">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7C19F3C-45A3-1D4E-5FF7-8ADCE5A3012B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B0C10E2-7BCD-4CD5-772B-9353286DE3D7" name="tb_tge_desastre_id_desastre_fk">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<generatorID>2DBFB26A-A247-30CF-EAFF-B11BF33F01C8</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="840E1E20-CA93-18A4-FE72-8AFDAECFA868"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="258078BC-CB54-30D4-AAE6-148BDFA806FB" name="tb_tge_desas_vant_id_vant_fk">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 04:06:23 UTC</createdTime>
+<generatorID>C448F454-0380-2DE3-0A79-26C1B8C92C46</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E6E4D2C-0737-06C4-B972-AA3E63CDC48B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

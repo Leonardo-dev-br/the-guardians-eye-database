@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="42BA036B-E81F-35FA-9BA8-72D6B24B62B6" name="TB_TGE_USUARIO">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>B13D6D1D-1B3C-D515-8BE4-9A19029887E7</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_usuario" id="B3FFA600-6826-5AF6-699F-86B17AB6ABE9">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>A2500531-937F-6394-7DA5-403F925ACF82</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome_usuario" id="FF403555-8B2C-AD52-AA91-BEA77BC1F042">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>18A2E492-34BA-7129-F07F-2A05D9283FF4</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sobrenome" id="82191D9C-7CD2-5D8F-CD0F-C1DD8C49640A">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>88A31145-B7B0-163E-336F-28053A7BBEA9</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cpf" id="BDFF7C30-7392-6ED7-6742-193F477DE3CC">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>4A3B9E26-F485-9221-0A59-A7D8D151AEFD</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cargo" id="1400C2A9-65C4-84CB-5012-790D879E72FD">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>2DEF142D-24B9-0EA5-B67A-9F50B603EED5</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="funcao" id="24C95C1B-4E28-7B7A-6348-5EB042BECB5E">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>600EDDD3-3846-308C-65CF-B2D175D694B8</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="2AE56DC8-8673-8C94-C9D8-9CDC8383A979">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>38DA222D-E91B-E31B-F9DB-968A6706C9DA</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>125</dataTypeSize>
+<ownDataTypeParameters>125,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="senha" id="51AB2BD9-A2B7-F374-2025-F95B3FE1097D">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>92CD400E-8B5A-B92F-28D4-C2D02B1A13E6</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>28</dataTypeSize>
+<ownDataTypeParameters>28,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="55D37809-C5B5-65D9-B0A5-BC1EEDBEF732" name="tb_tge_usuario_id_usuario_pk">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>1D3BD356-1E5A-099F-669A-6469A2164964</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3FFA600-6826-5AF6-699F-86B17AB6ABE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

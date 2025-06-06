@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7CE8F980-1A3B-6AC9-C6A0-B9196A644D1B" name="TB_TGE_TERRENO_DESASTRE">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<ordsAlias>relation_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_terreno_desastre" id="0FA321FB-870B-3A8F-AE35-E20153A9CB52">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_desastre" id="7333AE4D-20FE-7C69-7EBD-6BEB262E35E8">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9B830FA0-57A6-AB0B-0DE4-D5BEC7762911" referredColumn="D30CEDFB-547C-55F3-17F1-DE9B0E9F0950"/>
+</associations>
+</Column>
+<Column name="id_terreno" id="0F6C0399-7462-491E-FF3B-B5F5BBD3E835">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:26:33 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7C0691AD-6460-6622-5BD5-CD8BDC5690EA" referredColumn="7A9648F2-0BE3-5CC5-ACBA-31C985BF0D6F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DD70073A-1D57-9921-F4DC-E99B3BADB4D9" name="tb_tge_td_id_terreno_desa_pk">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FA321FB-870B-3A8F-AE35-E20153A9CB52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="50BE9188-111C-6D74-DC9B-713E6DC40A90" name="tb_tge_tergeo_id_terreno_fk">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<generatorID>8A34270C-543B-0CC8-39E0-A305DC97369C</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F6C0399-7462-491E-FF3B-B5F5BBD3E835"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="15D51D72-06C0-1441-3374-5EA18274BE19" name="tb_tge_desastre_id_dasastre_fk">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<generatorID>8A34270C-543B-0CC8-39E0-A305DC97369C</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7333AE4D-20FE-7C69-7EBD-6BEB262E35E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

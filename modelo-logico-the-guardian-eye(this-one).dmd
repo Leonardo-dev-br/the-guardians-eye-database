@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="modelo-conceitual-the-guardian-eye(this-one)" id="24E6AEF0-81DF-F30D-051A-2DE96853A803" version="3.5">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-28 21:05:27 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>24E6AEF0-81DF-F30D-051A-2DE96853A803</designId>
+</OSDM_Design>

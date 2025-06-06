@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EED6CC68-29C4-C3AC-3CD2-2E087EDB263A" name="TB_TGE_DESASTRE">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>4EAC9F0B-7DA6-4C9A-6596-D7B14F9AB1F2</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_desastre" id="D30CEDFB-547C-55F3-17F1-DE9B0E9F0950">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>B5AD3F5D-50B8-B6BA-C324-5DD1CC4E32CE</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_local" id="A93B3EAB-D444-BFAE-27C5-BBEDB283FBF3">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>708528FA-FCE1-85F7-0130-13A22AB5CDF8</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E2065433-12E0-774E-3763-2FE9EF6AE014" referredColumn="4888A766-8B09-785A-1D01-261CCB994C7D"/>
+</associations>
+</Column>
+<Column name="id_impacto" id="C456A27D-19F7-D90E-B6A9-27D28B36A811">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>3017CEE0-2CD9-074E-E4B0-AA23F09D798C</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="270B6152-BE9C-3297-57FB-257E986A021D" referredColumn="0681A8B1-CE86-FB87-A59C-75E5E4C4DD34"/>
+</associations>
+</Column>
+<Column name="id_grupo_desastre" id="1C0AF311-B677-7E95-EE0F-CFCEC6ADE4D3">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>11106CC5-EAD0-AB91-15B3-2F9750928A93</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0377ADAA-995D-8D5D-041A-821F07D5A411" referredColumn="ED544D1F-1C35-8750-BE79-6E2C55F25CED"/>
+</associations>
+</Column>
+<Column name="id_usuario" id="8F9366AD-46A0-AF84-1081-9891F4F33E10">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>9EFCBF9C-4ADD-09CF-AC2A-5FAA3658F28D</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5FDD7C30-65ED-E162-EBCF-F30310018939" referredColumn="B3FFA600-6826-5AF6-699F-86B17AB6ABE9"/>
+</associations>
+</Column>
+<Column name="cobrade" id="747B0060-1978-8E58-E1C3-562CE5E35A7A">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>8720756F-9320-A0E5-1D7D-7EE912708BE0</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_ocorrencia" id="C04D9820-9AD9-3770-7795-88BB6F45FEA3">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>10E73079-3DF2-4C9E-B387-FC9748C002FF</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B18CE86C-3458-8604-A4BC-9DD6077CE5FA" name="tb_tge_desastre_id_desastre_pk">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>0CFEB4E3-8B00-C3CB-122B-8387242B6E14</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D30CEDFB-547C-55F3-17F1-DE9B0E9F0950"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BD0B6734-8173-02E0-1033-A65E501FAA35" name="tb_tge_impacto_id_impacto_fk">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>8D5B8912-8D3B-34F5-A90D-774B117FCCF8</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C456A27D-19F7-D90E-B6A9-27D28B36A811"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6FE0D229-BB11-4BEF-1DA4-4922B6B44410" name="tb_tge_grudes_id_gru_desas_fk">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<generatorID>C8E85FC9-DE8D-00CD-C0B4-C863537AD8F2</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C0AF311-B677-7E95-EE0F-CFCEC6ADE4D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AA9C3876-143B-00DA-5181-33A0603C6B1F" name="tb_tge_usuario_id_usuario_fk">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<generatorID>8DD660CF-F628-D397-C393-5D5C79B7FD47</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F9366AD-46A0-AF84-1081-9891F4F33E10"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4793D1E8-A6A7-3943-FEF8-A9672FD28D20" name="tb_tge_local_id_local_fk">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<generatorID>3163DEF5-55C7-58F8-7782-1A26394565AA</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A93B3EAB-D444-BFAE-27C5-BBEDB283FBF3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

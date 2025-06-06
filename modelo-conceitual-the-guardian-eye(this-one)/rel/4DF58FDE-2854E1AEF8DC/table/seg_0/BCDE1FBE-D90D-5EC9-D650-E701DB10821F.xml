@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BCDE1FBE-D90D-5EC9-D650-E701DB10821F" name="TB_TGE_IMAGENS_CAPTURADAS">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>5A990C2C-2E4D-5ED9-B4D3-2FFE1A4FF4AC</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_imagem" id="E709C300-D183-E4E8-2F51-0DA9D415F450">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>167D2434-817C-EADA-4520-A7D93D261C6E</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hospedagem" id="2C2EE1DD-99E0-7C1C-BAB8-E2D4577F1FD0">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>19A80EBB-9FB1-9FE6-B4FE-624C3CB757CF</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tamanho" id="396BEEEF-E5CF-D33E-E84A-7FAE3C558B17">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>7753FB13-F46E-CDAF-58D7-DD7904FEBFC4</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>75</dataTypeSize>
+<ownDataTypeParameters>75,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="25529533-029F-79C9-4B3E-28F85114F194" name="tb_tge_ima_cap_id_imagem_pk">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>FF8FE4F0-BC60-2C06-B8E8-B5F453F7F32B</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E709C300-D183-E4E8-2F51-0DA9D415F450"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

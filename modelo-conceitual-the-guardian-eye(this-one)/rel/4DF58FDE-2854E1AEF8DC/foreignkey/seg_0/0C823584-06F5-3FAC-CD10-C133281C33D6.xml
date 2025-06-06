@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0C823584-06F5-3FAC-CD10-C133281C33D6" containerWithKeyObject="378C7964-DA11-FE87-D600-D43FC993878A" localFKIndex="258078BC-CB54-30D4-AAE6-148BDFA806FB" name="tb_tge_desas_vant_id_vant_fk">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 04:06:23 UTC</createdTime>
+<generatorID>C448F454-0380-2DE3-0A79-26C1B8C92C46</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<referredTableLongName>TB_TGE_VANT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>23BA38FD-5939-4F37-5F0E-1C8C5D90990F</referredTableID>
+<keyObject>64C1CB31-9917-5049-3F7D-3C2A1248E5C4</keyObject>
+<referredKeyID>64C1CB31-9917-5049-3F7D-3C2A1248E5C4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_vant</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

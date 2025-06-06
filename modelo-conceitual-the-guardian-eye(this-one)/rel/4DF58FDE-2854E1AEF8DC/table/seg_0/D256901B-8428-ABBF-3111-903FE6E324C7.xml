@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D256901B-8428-ABBF-3111-903FE6E324C7" name="TB_TGE_LOCAL">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>2E89E5C0-0C39-CDD6-1F03-49D1D856C5DC</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_local" id="4888A766-8B09-785A-1D01-261CCB994C7D">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>E4DED954-FC66-659C-B221-205D3E845D25</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cep" id="E827CA41-C03A-3344-248C-24CA68FEBDB7">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>93F85806-1C25-15FD-B06A-1AA64F7D2069</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="endereco" id="5C217D31-799B-C033-B5A8-1D63BBDD572F">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>67D85DA1-270B-45A9-8A05-0389F99CE76F</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>125</dataTypeSize>
+<ownDataTypeParameters>125,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="municipio" id="9995FD32-1BF8-3675-E8BF-AE8738352305">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>64517266-F2D4-C63C-DC66-B1615D8362FB</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>75</dataTypeSize>
+<ownDataTypeParameters>75,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero" id="3A2E6F88-0521-A54E-0C50-A0AD64EC7DE9">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>880DDECE-E200-F8E5-7A3A-B64FE3B2647A</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="latitude" id="347645D4-8072-D01D-AC6B-37EBCE118968">
+<createdBy>leona</createdBy>
+<createdTime>2025-06-06 01:23:02 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,10,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="longitude" id="903B46B7-D916-9052-D3D1-3AFDBFC74FF1">
+<createdBy>leona</createdBy>
+<createdTime>2025-06-06 01:23:02 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,11,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BD18F4FB-D74D-812E-3E9F-E2A68787CBD4" name="tb_tge_local_id_local_pk">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:51 UTC</createdTime>
+<generatorID>3C964336-0491-3E67-D690-939690BD38EE</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4888A766-8B09-785A-1D01-261CCB994C7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

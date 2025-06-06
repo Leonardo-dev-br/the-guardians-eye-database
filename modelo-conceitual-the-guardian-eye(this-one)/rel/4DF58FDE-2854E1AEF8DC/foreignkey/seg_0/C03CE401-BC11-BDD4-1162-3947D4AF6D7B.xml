@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C03CE401-BC11-BDD4-1162-3947D4AF6D7B" containerWithKeyObject="2433C13F-F672-3A72-51A8-1FD75265FD3A" localFKIndex="D57D6D4C-4E6D-9242-848F-85271920D7B6" name="tb_tge_zona_id_zona_fk">
+<createdBy>leona</createdBy>
+<createdTime>2025-05-30 02:22:52 UTC</createdTime>
+<generatorID>EB84BF81-14D1-F34F-4BA1-F07B890C205C</generatorID>
+<ownerDesignName>modelo-conceitual-the-guardian-eye(this-one)</ownerDesignName>
+<referredTableLongName>TB_TGE_ZONA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B0F3B006-9DC2-F668-29C2-767023CE826C</referredTableID>
+<keyObject>0D62680B-7BE7-AD63-F804-E5F35241CF1E</keyObject>
+<referredKeyID>0D62680B-7BE7-AD63-F804-E5F35241CF1E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_zona</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
