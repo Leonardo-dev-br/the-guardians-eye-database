@@ -101,8 +101,12 @@ DROP SEQUENCE tb_tge_usuario_id_usuario_seq;
 
 DROP SEQUENCE tb_tge_vant_id_vant_seq;
 
+DROP SEQUENCE tb_tge_vant_imagens_id_vant_im;
 
-DROP PROCEDURE inserir_terreno_geografico_procedure;
+DROP SEQUENCE tb_tge_zona_id_zona_seq;
+
+
+DROP PROCEDURE inserir_tb_tge_terreno_geografico_procedure;
 
 DROP PROCEDURE inserir_tb_tge_usuario_procedure;
 
@@ -126,7 +130,7 @@ DROP PROCEDURE inserir_tb_tge_impacto_material_procedure;
 
 DROP PROCEDURE inserir_tb_tge_impacto_procedure;
 
-DROP PROCEDURE inserir_tge_desastre_procedure;
+DROP PROCEDURE inserir_tb_tge_desastre_procedure;
 
 DROP PROCEDURE inserir_tb_tge_terreno_desastre_procedure;
 
@@ -136,157 +140,20 @@ DROP PROCEDURE inserir_tb_tge_vant_imagens_procedure;
 
 DROP PROCEDURE inserir_tb_tge_desastre_vant_procedure;
 
-DROP SEQUENCE inserir_tb_tge_desastre_zona_procedure;
+DROP PROCEDURE inserir_tb_tge_desastre_zona_procedure;
 
-DROP SEQUENCE inserir_tb_tge_incendio_florestal_procedure;
+DROP PROCEDURE inserir_tb_tge_incendio_florestal_procedure;
 
-DROP SEQUENCE inserir_tb_tge_deslizamento_procedure;
+DROP PROCEDURE inserir_tb_tge_deslizamento_procedure;
 
-DROP SEQUENCE inserir_tb_tge_inundacao_procedure;
+DROP PROCEDURE inserir_tb_tge_inundacao_procedure;
 
-DROP SEQUENCE inserir_tb_tge_seca_procedure;
+DROP PROCEDURE inserir_tb_tge_seca_procedure;
 
-DROP SEQUENCE inserir_tb_tge_desastre_sensores_procedure;
+DROP PROCEDURE inserir_tb_tge_desastre_sensores_procedure;
 
 */
 
-DROP TABLE tb_tge_desastre CASCADE CONSTRAINTS;
-
-DROP TABLE tb_tge_desastre_sensores CASCADE CONSTRAINTS;
-
-DROP TABLE tb_tge_desastre_vant CASCADE CONSTRAINTS;
-
-DROP TABLE tb_tge_desastre_zona CASCADE CONSTRAINTS;
-
-DROP TABLE tb_tge_deslizamento CASCADE CONSTRAINTS;
-
-DROP TABLE tb_tge_grupo_desastre CASCADE CONSTRAINTS;
-
-DROP TABLE tb_tge_imagens_capturadas CASCADE CONSTRAINTS;
-
-DROP TABLE tb_tge_impacto CASCADE CONSTRAINTS;
-
-DROP TABLE tb_tge_impacto_classificacao CASCADE CONSTRAINTS;
-
-DROP TABLE tb_tge_impacto_humano CASCADE CONSTRAINTS;
-
-DROP TABLE tb_tge_impacto_material CASCADE CONSTRAINTS;
-
-DROP TABLE tb_tge_incendio_florestal CASCADE CONSTRAINTS;
-
-DROP TABLE tb_tge_inundacao CASCADE CONSTRAINTS;
-
-DROP TABLE tb_tge_local CASCADE CONSTRAINTS;
-
-DROP TABLE tb_tge_seca CASCADE CONSTRAINTS;
-
-DROP TABLE tb_tge_sensores CASCADE CONSTRAINTS;
-
-DROP TABLE tb_tge_subgrupo_desastre CASCADE CONSTRAINTS;
-
-DROP TABLE tb_tge_terreno_desastre CASCADE CONSTRAINTS;
-
-DROP TABLE tb_tge_terreno_geografico CASCADE CONSTRAINTS;
-
-DROP TABLE tb_tge_usuario CASCADE CONSTRAINTS;
-
-DROP TABLE tb_tge_vant CASCADE CONSTRAINTS;
-
-DROP TABLE tb_tge_vant_imagens CASCADE CONSTRAINTS;
-
-DROP TABLE tb_tge_zona CASCADE CONSTRAINTS;
-
-
-
-                                                              
-DROP SEQUENCE tb_tge_desastre_id_desastre_seq;
-
-DROP SEQUENCE tb_tge_desas_sensor_id_de_seq;
-
-DROP SEQUENCE tb_tge_desas_vant_id_des_seq;
-
-DROP SEQUENCE tb_tge_des_zona_id_des_seq;
-
-DROP SEQUENCE tb_tge_desliza_id_desliza_seq;
-
-DROP SEQUENCE tb_tge_grupo_des_id_grupo_seq;
-
-DROP SEQUENCE tb_tge_img_cap_id_img_cap_seq;
-
-DROP SEQUENCE tb_tge_impacto_id_impacto_seq;
-
-DROP SEQUENCE tb_tge_im_class_id_im_class_seq;
-
-DROP SEQUENCE tb_tge_im_hu_id_impac_seq;
-
-DROP SEQUENCE tb_tge_impacto_mat_id_imp_seq;
-
-DROP SEQUENCE tb_tge_inc_flo_id_inc_seq;
-
-DROP SEQUENCE tb_tge_inun_id_inundacao_seq;
-
-DROP SEQUENCE tb_tge_local_id_local_seq;
-
-DROP SEQUENCE tb_tge_seca_id_seca_seq;
-
-DROP SEQUENCE tb_tge_sensores_id_sensor_seq;
-
-DROP SEQUENCE tb_tge_sub_des_id_sub_seq;
-
-DROP SEQUENCE tb_tge_terreno_des_id_ter_seq;
-
-DROP SEQUENCE tb_tge_terre_geo_id_terre_seq;
-
-DROP SEQUENCE tb_tge_usuario_id_usuario_seq;
-
-DROP SEQUENCE tb_tge_vant_id_vant_seq;
-
-
-DROP PROCEDURE inserir_terreno_geografico_procedure;
-
-DROP PROCEDURE inserir_tb_tge_usuario_procedure;
-
-DROP PROCEDURE inserir_tb_tge_local_procedure;
-
-DROP PROCEDURE inserir_tb_tge_subgrupo_desastre_procedure;
-
-DROP PROCEDURE inserir_tb_tge_vant_procedure;
-
-DROP PROCEDURE inserir_tb_tge_imagens_capturadas_procedure;
-
-DROP PROCEDURE inserir_tb_tge_zona_procedure;
-
-DROP PROCEDURE inserir_tb_tge_sensores_procedure;
-
-DROP PROCEDURE inserir_tb_tge_impacto_classificacao_procedure;
-
-DROP PROCEDURE inserir_tb_tge_impacto_humano_procedure;
-
-DROP PROCEDURE inserir_tb_tge_impacto_material_procedure;
-
-DROP PROCEDURE inserir_tb_tge_impacto_procedure;
-
-DROP PROCEDURE inserir_tge_desastre_procedure;
-
-DROP PROCEDURE inserir_tb_tge_terreno_desastre_procedure;
-
-DROP PROCEDURE inserir_tb_tge_grupo_desastre_procedure;
-
-DROP PROCEDURE inserir_tb_tge_vant_imagens_procedure;
-
-DROP PROCEDURE inserir_tb_tge_desastre_vant_procedure;
-
-DROP SEQUENCE inserir_tb_tge_desastre_zona_procedure;
-
-DROP SEQUENCE inserir_tb_tge_incendio_florestal_procedure;
-
-DROP SEQUENCE inserir_tb_tge_deslizamento_procedure;
-
-DROP SEQUENCE inserir_tb_tge_inundacao_procedure;
-
-DROP SEQUENCE inserir_tb_tge_seca_procedure;
-
-DROP SEQUENCE inserir_tb_tge_desastre_sensores_procedure;
 
 
 CREATE TABLE tb_tge_desastre (
