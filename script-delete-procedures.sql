@@ -14,15 +14,17 @@ CREATE OR REPLACE PROCEDURE deletar_terreno_geografico_procedure (
 )
 IS
 BEGIN
-
     IF p_id_terreno IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'ID do terreno não pode ser nulo.');
+        RAISE_APPLICATION_ERROR(-20001, 'ID do terreno n�o pode ser nulo.');
     END IF;
 
-
-    DELETE FROM tb_tge_terreno_geografico
+    -- Exclui os registros dependentes da tabela filha
+    DELETE FROM tb_tge_terreno_desastre
     WHERE id_terreno = p_id_terreno;
 
+    -- Agora pode excluir o terreno geogr�fico
+    DELETE FROM tb_tge_terreno_geografico
+    WHERE id_terreno = p_id_terreno;
 
     IF SQL%ROWCOUNT = 0 THEN
         DBMS_OUTPUT.PUT_LINE('Nenhum terreno encontrado com o ID ' || p_id_terreno);
@@ -33,15 +35,21 @@ BEGIN
 
 EXCEPTION
     WHEN OTHERS THEN
+        ROLLBACK;
         DBMS_OUTPUT.PUT_LINE('Erro ao deletar terreno: ' || SQLERRM);
 END;
 /
 
 
+
 BEGIN
-    deletar_terreno_geografico(4);
+    deletar_terreno_geografico_procedure(4);
 END;
 /
+
+SELECT * FROM tb_tge_terreno_geografico;
+
+
 
 --Usuario
 CREATE OR REPLACE PROCEDURE deletar_usuario_procedure (
@@ -50,29 +58,32 @@ CREATE OR REPLACE PROCEDURE deletar_usuario_procedure (
 IS
 BEGIN
     IF p_id_usuario IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'ID do usuário não pode ser nulo.');
+        RAISE_APPLICATION_ERROR(-20001, 'ID do usu�rio n�o pode ser nulo.');
     END IF;
 
     DELETE FROM tb_tge_usuario
     WHERE id_usuario = p_id_usuario;
 
     IF SQL%ROWCOUNT = 0 THEN
-        DBMS_OUTPUT.PUT_LINE('Nenhum usuário encontrado com o ID ' || p_id_usuario);
+        DBMS_OUTPUT.PUT_LINE('Nenhum usu�rio encontrado com o ID ' || p_id_usuario);
     ELSE
         COMMIT;
-        DBMS_OUTPUT.PUT_LINE('Usuário deletado com sucesso. ID: ' || p_id_usuario);
+        DBMS_OUTPUT.PUT_LINE('Us�rio deletado com sucesso. ID: ' || p_id_usuario);
     END IF;
 
 EXCEPTION
     WHEN OTHERS THEN
-        DBMS_OUTPUT.PUT_LINE('Erro ao deletar usuário: ' || SQLERRM);
+        DBMS_OUTPUT.PUT_LINE('Erro ao deletar usu�rio: ' || SQLERRM);
 END;
 /
 
 BEGIN
-    deletar_usuario(2);
-    deletar_usuario(6);
+    deletar_usuario_procedure(5);
+    deletar_usuario_procedure(6);
 END;
+/
+
+SELECT * FROM tb_tge_usuario;
 
 
 --Local
@@ -81,16 +92,15 @@ CREATE OR REPLACE PROCEDURE deletar_local_procedure (
 )
 IS
 BEGIN
-    -- Verificação se o ID foi informado
     IF p_id_local IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'ID do local não pode ser nulo.');
+        RAISE_APPLICATION_ERROR(-20001, 'ID do local n�o pode ser nulo.');
     END IF;
 
-    -- Deletar local com base no ID
+
     DELETE FROM tb_tge_local
     WHERE id_local = p_id_local;
 
-    -- Verificação se algum registro foi afetado
+
     IF SQL%ROWCOUNT = 0 THEN
         DBMS_OUTPUT.PUT_LINE('Nenhum local encontrado com o ID ' || p_id_local);
     ELSE
@@ -109,6 +119,9 @@ BEGIN
     deletar_local_procedure(3);
 END;
 /
+
+SELECT * FROM tb_tge_local;
+
 
 --Subgrupo
 CREATE OR REPLACE PROCEDURE deletar_subgrupo_desastre_procedure (
@@ -175,6 +188,7 @@ BEGIN
 END;
 /
 
+SELECT * FROM tb_tge_vant;
 
 --Imagens Capturadas
 CREATE OR REPLACE PROCEDURE deletar_imagem_capturada_procedure (
@@ -211,6 +225,8 @@ BEGIN
 END;
 /
 
+SELECT * FROM tb_tge_imagens_capturadas;
+
 
 --Zona
 CREATE OR REPLACE PROCEDURE deletar_zona_procedure (
@@ -241,6 +257,9 @@ BEGIN
     deletar_zona_procedure(1);
     deletar_zona_procedure(3);
 END;
+/
+
+SELECT * FROM tb_tge_zona;
 
 
 --Sensores
@@ -273,6 +292,8 @@ BEGIN
     deletar_sensor_procedure(2);
     deletar_sensor_procedure(4);
 END;
+/
+SELECT * FROM tb_tge_sensores;
 
 
 --Classificação de Impacto
@@ -304,7 +325,8 @@ BEGIN
     deletar_impacto_classificacao_procedure(1);
     deletar_impacto_classificacao_procedure(3);
 END;
-
+/
+SELECT * FROM tb_tge_impacto_classificacao;
 
 --Impacto Humano
 CREATE OR REPLACE PROCEDURE deletar_impacto_humano_procedure (
@@ -336,6 +358,8 @@ BEGIN
     deletar_impacto_humano_procedure(3);
     deletar_impacto_humano_procedure(4);
 END;
+/
+SELECT * FROM tb_tge_impacto_humano;
 
 
 --Impacto Material
@@ -368,6 +392,10 @@ BEGIN
     deletar_impacto_material_procedure(2);
     deletar_impacto_material_procedure(5);
 END;
+/
+
+SELECT * FROM tb_tge_impacto_material;
+
 
 --Impacto
 CREATE OR REPLACE PROCEDURE deletar_impacto_procedure (
@@ -398,6 +426,10 @@ BEGIN
     deletar_impacto_procedure(1);
     deletar_impacto_procedure(3);
 END;
+/
+
+SELECT * FROM tb_tge_impacto;
+
 
 --Desastre
 CREATE OR REPLACE PROCEDURE deletar_desastre_procedure (
@@ -428,6 +460,9 @@ BEGIN
     deletar_desastre_procedure(2);
     deletar_desastre_procedure(4);
 END;
+/
+
+SELECT * FROM tb_tge_desastre;
 
 
 --Terreno Desastre
@@ -459,6 +494,9 @@ BEGIN
     deletar_terreno_desastre_procedure(1);
     deletar_terreno_desastre_procedure(3);
 END;
+/
+
+SELECT * FROM tb_tge_terreno_desastre;
 
 
 --Grupo Desastre
@@ -491,6 +529,9 @@ BEGIN
     deletar_grupo_desastre_procedure(2);
     deletar_grupo_desastre_procedure(3);
 END;
+/
+
+SELECT * FROM tb_tge_grupo_desastre;
 
 
 --Vant Imagem
@@ -523,7 +564,9 @@ BEGIN
     deletar_vant_imagem_procedure(1);
     deletar_vant_imagem_procedure(2);
 END;
+/
 
+SELECT * FROM tb_tge_vant_imagens;
 
 --Desastre Vant
 CREATE OR REPLACE PROCEDURE deletar_desastre_vant_procedure (
@@ -555,6 +598,8 @@ BEGIN
     deletar_desastre_vant_procedure(1);
     deletar_desastre_vant_procedure(5);
 END;
+/
+SELECT * FROM tb_tge_desastre_vant;
 
 
 --Desastre Zona
@@ -587,7 +632,8 @@ BEGIN
     deletar_desastre_zona_procedure(1);
     deletar_desastre_zona_procedure(2);
 END;
-
+/
+SELECT * FROM tb_tge_desastre_zona;
 
 --Incêndio
 CREATE OR REPLACE PROCEDURE deletar_incendio_florestal_procedure (
@@ -619,7 +665,9 @@ BEGIN
     deletar_incendio_florestal_procedure(1);
     deletar_incendio_florestal_procedure(3);
 END;
+/
 
+SELECT * FROM tb_tge_incendio_florestal;
 
 --Deslizamento
 CREATE OR REPLACE PROCEDURE deletar_deslizamento_procedure (
@@ -650,7 +698,9 @@ BEGIN
     deletar_deslizamento_procedure(2);
     deletar_deslizamento_procedure(4);
 END;
+/
 
+SELECT * FROM tb_tge_deslizamento;
 
 --Inundação
 CREATE OR REPLACE PROCEDURE deletar_inundacao_procedure (
@@ -681,7 +731,9 @@ BEGIN
     deletar_inundacao_procedure(1);
     deletar_inundacao_procedure(3);
 END;
+/
 
+SELECT * FROM tb_tge_inundacao;
 
 --Seca
 CREATE OR REPLACE PROCEDURE deletar_seca_procedure (
@@ -712,7 +764,8 @@ BEGIN
     deletar_seca_procedure(3);
     deletar_seca_procedure(4);
 END;
-
+/
+SELECT * FROM tb_tge_seca;
 
 --Desastre Sensores
 CREATE OR REPLACE PROCEDURE deletar_desastre_sensor_procedure (
@@ -743,3 +796,6 @@ BEGIN
     deletar_desastre_sensor_procedure(1);
     deletar_desastre_sensor_procedure(2);
 END;
+/
+
+SELECT * FROM tb_tge_desastre_sensores;
