@@ -8,7 +8,7 @@ Integrantes: LEONARDO P SANTOS - RM557541
 */
 
 SET SERVEROUTPUT ON
--- INSERÇÃO
+-- INSERSÃƒO
 --Terrno Geografico
 CREATE OR REPLACE PROCEDURE inserir_tb_tge_terreno_geografico_procedure (
     p_terreno IN VARCHAR2
@@ -28,8 +28,8 @@ END;
 /
 
 BEGIN
-    inserir_tb_tge_terreno_geografico_procedure('Planície');
-    inserir_tb_tge_terreno_geografico_procedure('Depressão');
+    inserir_tb_tge_terreno_geografico_procedure('Planï¿½cie');
+    inserir_tb_tge_terreno_geografico_procedure('Depressï¿½o');
     inserir_tb_tge_terreno_geografico_procedure('Colina');
     inserir_tb_tge_terreno_geografico_procedure('Chapada');
     inserir_tb_tge_terreno_geografico_procedure('Morro');
@@ -71,10 +71,10 @@ BEGIN
     
     COMMIT;
 
-    DBMS_OUTPUT.PUT_LINE('Usuário "' || p_nome_usuario || '" inserido com sucesso.');
+    DBMS_OUTPUT.PUT_LINE('Usuï¿½rio "' || p_nome_usuario || '" inserido com sucesso.');
 EXCEPTION
     WHEN OTHERS THEN
-        DBMS_OUTPUT.PUT_LINE('Erro ao inserir usuário: ' || SQLERRM);
+        DBMS_OUTPUT.PUT_LINE('Erro ao inserir usuï¿½rio: ' || SQLERRM);
 END;
 /
 
@@ -84,15 +84,15 @@ BEGIN
     );
 
     inserir_tb_tge_usuario_procedure(
-        'Bruno', 'Ferreira Santos', 22345678902, 'Geógrafo', 'Mapeamento de Áreas', 'bruno.ferreira@exemplo.com', 'senhaBruno2025'
+        'Bruno', 'Ferreira Santos', 22345678902, 'Geï¿½grafo', 'Mapeamento de ï¿½reas', 'bruno.ferreira@exemplo.com', 'senhaBruno2025'
     );
 
     inserir_tb_tge_usuario_procedure(
-        'Carla', 'Oliveira Mendes', 32345678903, 'Analista', 'Gestão de Riscos', 'carla.mendes@exemplo.com', 'senhaCarla2025'
+        'Carla', 'Oliveira Mendes', 32345678903, 'Analista', 'Gestï¿½o de Riscos', 'carla.mendes@exemplo.com', 'senhaCarla2025'
     );
 
     inserir_tb_tge_usuario_procedure(
-        'Daniel', 'Pereira Costa', 42345678904, 'Tecnólogo', 'Monitoramento Climático', 'daniel.costa@exemplo.com', 'senhaDaniel2025'
+        'Daniel', 'Pereira Costa', 42345678904, 'Tecnï¿½logo', 'Monitoramento Climï¿½tico', 'daniel.costa@exemplo.com', 'senhaDaniel2025'
     );
 
     inserir_tb_tge_usuario_procedure(
@@ -100,11 +100,11 @@ BEGIN
     );
 
     inserir_tb_tge_usuario_procedure(
-        'Felipe', 'Silva Martins', 62345678906, 'Técnico', 'Instalação de Sensores', 'felipe.martins@exemplo.com', 'senhaFelipe2025'
+        'Felipe', 'Silva Martins', 62345678906, 'Tï¿½cnico', 'Instalaï¿½ï¿½o de Sensores', 'felipe.martins@exemplo.com', 'senhaFelipe2025'
     );
 
     inserir_tb_tge_usuario_procedure(
-        'Giovana', 'Barros Almeida', 72345678907, 'Bióloga', 'Análise de Impacto', 'giovana.almeida@exemplo.com', 'senhaGiovana2025'
+        'Giovana', 'Barros Almeida', 72345678907, 'Biï¿½loga', 'Anï¿½lise de Impacto', 'giovana.almeida@exemplo.com', 'senhaGiovana2025'
     );
 END;
 /
@@ -146,13 +146,13 @@ END;
 /
 
 BEGIN
-    inserir_tb_tge_local_procedure(12345678, 'Rua São Pualo', 'Ibiúna', 120, -48.0972, -134.2266);
+    inserir_tb_tge_local_procedure(12345678, 'Rua Sï¿½o Pualo', 'Ibiï¿½na', 120, -48.0972, -134.2266);
     inserir_tb_tge_local_procedure(23456789, 'Av. Brasil', 'Sorocaba', 45, -30.1653, -7.0289);
-    inserir_tb_tge_local_procedure(34567890, 'Rua São João', 'Cotia', 221, -21.7678, -106.9430);
+    inserir_tb_tge_local_procedure(34567890, 'Rua Sï¿½o Joï¿½o', 'Cotia', 221, -21.7678, -106.9430);
     inserir_tb_tge_local_procedure(45678901, 'Alameda das Flores', 'Votorantim', 305, -21.2467, 110.1850);
-    inserir_tb_tge_local_procedure(56789012, 'Travessa do Sol', 'São Roque', 88, 73.5046, -18.3137);
+    inserir_tb_tge_local_procedure(56789012, 'Travessa do Sol', 'Sï¿½o Roque', 88, 73.5046, -18.3137);
     inserir_tb_tge_local_procedure(67890123, 'Rua Aurora', 'Itu', 133, 1.0334, -116.3303);
-    inserir_tb_tge_local_procedure(78901234, 'Rua dos Pinhais', 'Jundiaí', 77, 88.2035, 68.1825);
+    inserir_tb_tge_local_procedure(78901234, 'Rua dos Pinhais', 'Jundiaï¿½', 77, 88.2035, 68.1825);
 END;
 /
 
@@ -187,9 +187,9 @@ END;
 BEGIN
     inserir_tb_tge_subgrupo_desastre_procedure('1. Terremoto', 'Tremor de terra', '0');
     inserir_tb_tge_subgrupo_desastre_procedure('2. Movimento de massa', 'Deslizamento', 'Desmoronamento');
-    inserir_tb_tge_subgrupo_desastre_procedure('3. Inundação', 'Enchente', 'Inundação lenta');
-    inserir_tb_tge_subgrupo_desastre_procedure('4. Incêndio', 'Florestal', '0');
-    inserir_tb_tge_subgrupo_desastre_procedure('5. Erosão', 'Marinha', '0');
+    inserir_tb_tge_subgrupo_desastre_procedure('3. Inundaï¿½ï¿½o', 'Enchente', 'Inundaï¿½ï¿½o lenta');
+    inserir_tb_tge_subgrupo_desastre_procedure('4. Incï¿½ndio', 'Florestal', '0');
+    inserir_tb_tge_subgrupo_desastre_procedure('5. Erosï¿½o', 'Marinha', '0');
     inserir_tb_tge_subgrupo_desastre_procedure('6. Tempestade', 'Granizo', '0');
     inserir_tb_tge_subgrupo_desastre_procedure('7. Estiagem', 'Seca Prolongada', '0');
 END;
@@ -390,7 +390,7 @@ BEGIN
     
     COMMIT;
     
-    DBMS_OUTPUT.PUT_LINE('Zona inserida com sucesso: ' || p_desc_zona || ' com população de: ' || p_populacao || ' e porte: ' || p_porte);
+    DBMS_OUTPUT.PUT_LINE('Zona inserida com sucesso: ' || p_desc_zona || ' com populaï¿½ï¿½o de: ' || p_populacao || ' e porte: ' || p_porte);
 EXCEPTION
     WHEN OTHERS THEN
         DBMS_OUTPUT.PUT_LINE('Erro ao inserir zona: ' || SQLERRM);
@@ -400,9 +400,9 @@ END;
 
 BEGIN
     inserir_tb_tge_zona_procedure('Zona Norte', 150000, 'Grande');
-    inserir_tb_tge_zona_procedure('Zona Sul', 98000, 'Média');
+    inserir_tb_tge_zona_procedure('Zona Sul', 98000, 'Mï¿½dia');
     inserir_tb_tge_zona_procedure('Zona Leste', 200000, 'Grande');
-    inserir_tb_tge_zona_procedure('Zona Oeste', 75000, 'Média');
+    inserir_tb_tge_zona_procedure('Zona Oeste', 75000, 'Mï¿½dia');
     inserir_tb_tge_zona_procedure('Zona Central', 120000, 'Grande');
     inserir_tb_tge_zona_procedure('Zona Rural', 30000, 'Pequena');
     inserir_tb_tge_zona_procedure('Zona Costeira', 56000, 'Pequena');
@@ -458,16 +458,16 @@ END;
 
 BEGIN
     inserir_tb_tge_sensores_procedure('CHP-001', 'SM300', 'I2C', 'Umidade do Solo', 'AgroTech', 'Ativo', 'Digital', '0-1V', 3.30);
-    inserir_tb_tge_sensores_procedure('CHP-002', 'YL69', 'Analógica', 'Umidade do Solo', 'SoilSense', 'Ativo', 'Analógica', '0-5V', 2.80);
+    inserir_tb_tge_sensores_procedure('CHP-002', 'YL69', 'Analï¿½gica', 'Umidade do Solo', 'SoilSense', 'Ativo', 'Analï¿½gica', '0-5V', 2.80);
     inserir_tb_tge_sensores_procedure('CHP-003', 'DHT11', 'Digital', 'Umidade do Ar', 'SensorCorp', 'Ativo', 'Digital', '0-1V', 3.10);
     inserir_tb_tge_sensores_procedure('CHP-004', 'DHT22', 'Digital', 'Umidade do Ar', 'SensorCorp', 'Ativo', 'Digital', '0-1V', 3.50);
-    inserir_tb_tge_sensores_procedure('CHP-005', 'FC28', 'Analógica', 'Umidade do Solo', 'AgroTech', 'Ativo', 'Analógica', '0-3.3V', 2.60);
+    inserir_tb_tge_sensores_procedure('CHP-005', 'FC28', 'Analï¿½gica', 'Umidade do Solo', 'AgroTech', 'Ativo', 'Analï¿½gica', '0-3.3V', 2.60);
     inserir_tb_tge_sensores_procedure('CHP-006', 'HS1101', 'PWM', 'Umidade do Ar', 'ClimaSensor', 'Ativo', 'PWM', 'Modulada', 3.00);
     inserir_tb_tge_sensores_procedure('CHP-007', 'SEN0193', 'I2C', 'Condutividade do Solo', 'DFRobot', 'Ativo', 'Digital', '0-5V', 2.90);
 END;
 /
 
---Classificação de Impacto
+--Classificaï¿½ï¿½o de Impacto
 CREATE OR REPLACE PROCEDURE inserir_tb_tge_impacto_classificacao_procedure (
     p_nivel      IN INTEGER,
     p_desc_nivel IN VARCHAR2
@@ -484,10 +484,10 @@ BEGIN
      
      COMMIT;
     
-    DBMS_OUTPUT.PUT_LINE('Classificação do Impacto inserida com sucesso: ' || p_nivel || ' - ' || p_desc_nivel);
+    DBMS_OUTPUT.PUT_LINE('Classificaï¿½ï¿½o do Impacto inserida com sucesso: ' || p_nivel || ' - ' || p_desc_nivel);
 EXCEPTION
     WHEN OTHERS THEN
-        DBMS_OUTPUT.PUT_LINE('Erro ao inserir Classificação do Impacto: ' || SQLERRM);
+        DBMS_OUTPUT.PUT_LINE('Erro ao inserir Classificaï¿½ï¿½o do Impacto: ' || SQLERRM);
 END;
 /
 
@@ -498,7 +498,7 @@ BEGIN
     inserir_tb_tge_impacto_classificacao_procedure(4, 'Impacto Relevante');
     inserir_tb_tge_impacto_classificacao_procedure(5, 'Impacto Grave');
     inserir_tb_tge_impacto_classificacao_procedure(6, 'Impacto Muito Grave');
-    inserir_tb_tge_impacto_classificacao_procedure(7, 'Impacto Catastrófico');
+    inserir_tb_tge_impacto_classificacao_procedure(7, 'Impacto Catastrï¿½fico');
 END;
 /
 
@@ -534,13 +534,13 @@ END;
 /
 
 BEGIN
-    inserir_tb_tge_impacto_humano_procedure(1, 0, 'População preservada', 0);
+    inserir_tb_tge_impacto_humano_procedure(1, 0, 'Populaï¿½ï¿½o preservada', 0);
     inserir_tb_tge_impacto_humano_procedure(2, 15, 'Ferimentos leves e apoio local', 0);
     inserir_tb_tge_impacto_humano_procedure(3, 80, 'Deslocamento e pequenos traumas', 0);
-    inserir_tb_tge_impacto_humano_procedure(4, 200, 'Evacuação de área urbana parcial', 0);
-    inserir_tb_tge_impacto_humano_procedure(5, 500, 'População em abrigos e feridos graves', 1);
-    inserir_tb_tge_impacto_humano_procedure(6, 1200, 'Mortes registradas, sistema de saúde sobrecarregado', 1);
-    inserir_tb_tge_impacto_humano_procedure(7, 5000, 'Região colapsada, ajuda humanitária internacional', 1);
+    inserir_tb_tge_impacto_humano_procedure(4, 200, 'Evacuaï¿½ï¿½o de ï¿½rea urbana parcial', 0);
+    inserir_tb_tge_impacto_humano_procedure(5, 500, 'Populaï¿½ï¿½o em abrigos e feridos graves', 1);
+    inserir_tb_tge_impacto_humano_procedure(6, 1200, 'Mortes registradas, sistema de saï¿½de sobrecarregado', 1);
+    inserir_tb_tge_impacto_humano_procedure(7, 5000, 'Regiï¿½o colapsada, ajuda humanitï¿½ria internacional', 1);
 END;
 /
 
@@ -572,12 +572,12 @@ END;
 
 BEGIN
     inserir_tb_tge_impacto_material_procedure(1, 'Nenhum dano', 'Ambiente preservado');
-    inserir_tb_tge_impacto_material_procedure(2, 'Pequenos danos', 'Resíduos e sujeira localizada');
-    inserir_tb_tge_impacto_material_procedure(3, 'Danificação de estruturas leves', 'Poluição localizada no solo ou água');
-    inserir_tb_tge_impacto_material_procedure(4, 'Destruição parcial de edificações', 'Comprometimento de áreas urbanas e verdes');
-    inserir_tb_tge_impacto_material_procedure(5, 'Colapso de estruturas e rodovias', 'Contaminação de solo e mananciais');
-    inserir_tb_tge_impacto_material_procedure(6, 'Infraestrutura severamente comprometida', 'Desmatamento e destruição de ecossistemas locais');
-    inserir_tb_tge_impacto_material_procedure(7, 'Destruição em massa', 'Colapso ecológico, perda de biodiversidade e risco ambiental global');
+    inserir_tb_tge_impacto_material_procedure(2, 'Pequenos danos', 'Resï¿½duos e sujeira localizada');
+    inserir_tb_tge_impacto_material_procedure(3, 'Danificaï¿½ï¿½o de estruturas leves', 'Poluiï¿½ï¿½o localizada no solo ou ï¿½gua');
+    inserir_tb_tge_impacto_material_procedure(4, 'Destruiï¿½ï¿½o parcial de edificaï¿½ï¿½es', 'Comprometimento de ï¿½reas urbanas e verdes');
+    inserir_tb_tge_impacto_material_procedure(5, 'Colapso de estruturas e rodovias', 'Contaminaï¿½ï¿½o de solo e mananciais');
+    inserir_tb_tge_impacto_material_procedure(6, 'Infraestrutura severamente comprometida', 'Desmatamento e destruiï¿½ï¿½o de ecossistemas locais');
+    inserir_tb_tge_impacto_material_procedure(7, 'Destruiï¿½ï¿½o em massa', 'Colapso ecolï¿½gico, perda de biodiversidade e risco ambiental global');
 END;
 /
 
@@ -617,7 +617,7 @@ BEGIN
     inserir_tb_tge_impacto_procedure(4, 4, 'Impacto Relevante');
     inserir_tb_tge_impacto_procedure(5, 5, 'Impacto Grave');
     inserir_tb_tge_impacto_procedure(6, 6, 'Impacto Muito Grave');
-    inserir_tb_tge_impacto_procedure(7, 7, 'Impacto Catastrófico');
+    inserir_tb_tge_impacto_procedure(7, 7, 'Impacto Catastrï¿½fico');
 END;
 /
 
@@ -642,7 +642,7 @@ BEGIN
 
   COMMIT;
 
-  DBMS_OUTPUT.PUT_LINE('Inserção realizada com sucesso ');
+  DBMS_OUTPUT.PUT_LINE('Inserï¿½ï¿½o realizada com sucesso ');
 
 EXCEPTION
   WHEN OTHERS THEN
@@ -652,12 +652,12 @@ END;
 
 
 BEGIN
-  inserir_tb_tge_grupo_desastre_procedure(1, 1, 'Inundações Urbanas');
-  inserir_tb_tge_grupo_desastre_procedure(2, 1, 'Inundações Rurais');
+  inserir_tb_tge_grupo_desastre_procedure(1, 1, 'Inundaï¿½ï¿½es Urbanas');
+  inserir_tb_tge_grupo_desastre_procedure(2, 1, 'Inundaï¿½ï¿½es Rurais');
   inserir_tb_tge_grupo_desastre_procedure(3, 2, 'Deslizamento em Encostas');
   inserir_tb_tge_grupo_desastre_procedure(4, 2, 'Desmoronamento de Rochas');
-  inserir_tb_tge_grupo_desastre_procedure(5, 3, 'Secas Agrícolas');
-  inserir_tb_tge_grupo_desastre_procedure(6, 3, 'Estresse Hídrico');
+  inserir_tb_tge_grupo_desastre_procedure(5, 3, 'Secas Agrï¿½colas');
+  inserir_tb_tge_grupo_desastre_procedure(6, 3, 'Estresse Hï¿½drico');
   inserir_tb_tge_grupo_desastre_procedure(7, 4, 'Ciclones Tropicais');
 END;
 /
@@ -694,7 +694,7 @@ BEGIN
 
     COMMIT;
 
-    DBMS_OUTPUT.PUT_LINE('Inserção realizada com sucesso na tb_tge_desastre.');
+    DBMS_OUTPUT.PUT_LINE('Inserï¿½ï¿½o realizada com sucesso na tb_tge_desastre.');
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -787,7 +787,7 @@ BEGIN
 
   COMMIT;
 
-  DBMS_OUTPUT.PUT_LINE('Inserção realizada com sucesso ');
+  DBMS_OUTPUT.PUT_LINE('Inserï¿½ï¿½o realizada com sucesso ');
 
 EXCEPTION
   WHEN OTHERS THEN
@@ -828,7 +828,7 @@ BEGIN
 
   COMMIT;
 
-  DBMS_OUTPUT.PUT_LINE('Inserção realizada com sucesso');
+  DBMS_OUTPUT.PUT_LINE('Inserï¿½ï¿½o realizada com sucesso');
 
 EXCEPTION
   WHEN OTHERS THEN
@@ -867,7 +867,7 @@ BEGIN
 
   COMMIT;
 
-  DBMS_OUTPUT.PUT_LINE('Inserção realizada com sucesso');
+  DBMS_OUTPUT.PUT_LINE('Inserï¿½ï¿½o realizada com sucesso');
 
 EXCEPTION
   WHEN OTHERS THEN
@@ -905,7 +905,7 @@ BEGIN
 
   COMMIT;
 
-  DBMS_OUTPUT.PUT_LINE('Inserção realizada com sucesso');
+  DBMS_OUTPUT.PUT_LINE('Inserï¿½ï¿½o realizada com sucesso');
 
 EXCEPTION
   WHEN OTHERS THEN
@@ -925,7 +925,7 @@ END;
 /
 
 
---Incêndio
+--Incï¿½ndio
 CREATE OR REPLACE PROCEDURE inserir_tb_tge_incendio_florestal_procedure (
   p_id_impacto_classificacao IN NUMBER,
   p_causa                    IN VARCHAR2,
@@ -945,22 +945,22 @@ BEGIN
 
   COMMIT;
 
-  DBMS_OUTPUT.PUT_LINE('Inserção realizada com sucesso' );
+  DBMS_OUTPUT.PUT_LINE('Inserï¿½ï¿½o realizada com sucesso' );
 
 EXCEPTION
   WHEN OTHERS THEN
-    DBMS_OUTPUT.PUT_LINE('Erro ao inserir incêndio florestal: ' || SQLERRM);
+    DBMS_OUTPUT.PUT_LINE('Erro ao inserir incï¿½ndio florestal: ' || SQLERRM);
 END;
 /
 
 BEGIN
   inserir_tb_tge_incendio_florestal_procedure(1, 'Raio durante tempestade seca', 'Superficial');
-  inserir_tb_tge_incendio_florestal_procedure(2, 'Queimada agrícola descontrolada', 'Subterrâneo');
-  inserir_tb_tge_incendio_florestal_procedure(3, 'Fogueira deixada por campistas', 'Copa das árvores');
-  inserir_tb_tge_incendio_florestal_procedure(1, 'Curto-circuito em rede elétrica rural', 'Superficial');
-  inserir_tb_tge_incendio_florestal_procedure(2, 'Ação criminosa deliberada', 'Subterrâneo');
-  inserir_tb_tge_incendio_florestal_procedure(4, 'Explosão de tanque de combustível', 'Copa das árvores');
-  inserir_tb_tge_incendio_florestal_procedure(3, 'Fumaça de fogão a lenha em dia seco', 'Superficial');
+  inserir_tb_tge_incendio_florestal_procedure(2, 'Queimada agrï¿½cola descontrolada', 'Subterrï¿½neo');
+  inserir_tb_tge_incendio_florestal_procedure(3, 'Fogueira deixada por campistas', 'Copa das ï¿½rvores');
+  inserir_tb_tge_incendio_florestal_procedure(1, 'Curto-circuito em rede elï¿½trica rural', 'Superficial');
+  inserir_tb_tge_incendio_florestal_procedure(2, 'Aï¿½ï¿½o criminosa deliberada', 'Subterrï¿½neo');
+  inserir_tb_tge_incendio_florestal_procedure(4, 'Explosï¿½o de tanque de combustï¿½vel', 'Copa das ï¿½rvores');
+  inserir_tb_tge_incendio_florestal_procedure(3, 'Fumaï¿½a de fogï¿½o a lenha em dia seco', 'Superficial');
 END;
 /
 
@@ -981,7 +981,7 @@ BEGIN
 
   COMMIT;
 
-  DBMS_OUTPUT.PUT_LINE('Inserção realizada com sucesso');
+  DBMS_OUTPUT.PUT_LINE('Inserï¿½ï¿½o realizada com sucesso');
 
 EXCEPTION
   WHEN OTHERS THEN
@@ -1001,7 +1001,7 @@ END;
 /
 
 
---Inundação
+--Inundaï¿½ï¿½o
 CREATE OR REPLACE PROCEDURE inserir_tb_tge_inundacao_procedure (
   p_id_impacto_classificacao IN NUMBER,
   p_causa                    IN VARCHAR2,
@@ -1021,21 +1021,21 @@ BEGIN
 
   COMMIT;
 
-  DBMS_OUTPUT.PUT_LINE('Inserção realizada com sucesso ');
+  DBMS_OUTPUT.PUT_LINE('Inserï¿½ï¿½o realizada com sucesso ');
 
 EXCEPTION
   WHEN OTHERS THEN
-    DBMS_OUTPUT.PUT_LINE('Erro ao inserir inundação: ' || SQLERRM);
+    DBMS_OUTPUT.PUT_LINE('Erro ao inserir inundaï¿½ï¿½o: ' || SQLERRM);
 END;
 /
 
 BEGIN
   inserir_tb_tge_inundacao_procedure(1, 'Chuvas intensas na serra', 3.75);
   inserir_tb_tge_inundacao_procedure(2, 'Transbordamento de rio urbano', 2.40);
-  inserir_tb_tge_inundacao_procedure(3, 'Obstrução de galerias pluviais', 1.95);
+  inserir_tb_tge_inundacao_procedure(3, 'Obstruï¿½ï¿½o de galerias pluviais', 1.95);
   inserir_tb_tge_inundacao_procedure(1, 'Rompimento de barragem', 4.85);
-  inserir_tb_tge_inundacao_procedure(4, 'Acúmulo de água em área de várzea', 2.15);
-  inserir_tb_tge_inundacao_procedure(2, 'Elevação do nível do mar em zona costeira', 3.20);
+  inserir_tb_tge_inundacao_procedure(4, 'Acï¿½mulo de ï¿½gua em ï¿½rea de vï¿½rzea', 2.15);
+  inserir_tb_tge_inundacao_procedure(2, 'Elevaï¿½ï¿½o do nï¿½vel do mar em zona costeira', 3.20);
   inserir_tb_tge_inundacao_procedure(3, 'Falha no sistema de drenagem urbana', 1.80);
 END;
 /
@@ -1064,7 +1064,7 @@ BEGIN
 
   COMMIT;
 
-  DBMS_OUTPUT.PUT_LINE('Inserção realizada com sucesso');
+  DBMS_OUTPUT.PUT_LINE('Inserï¿½ï¿½o realizada com sucesso');
 
 EXCEPTION
   WHEN OTHERS THEN
@@ -1073,13 +1073,13 @@ END;
 /
 
 BEGIN
-  inserir_tb_tge_seca_procedure(1, 38.50, '°C', 5.20);
-  inserir_tb_tge_seca_procedure(2, 40.25, '°C', 3.80);
-  inserir_tb_tge_seca_procedure(3, 37.10, '°C', 6.45);
-  inserir_tb_tge_seca_procedure(2, 42.00, '°C', 2.10);
-  inserir_tb_tge_seca_procedure(1, 39.75, '°C', 4.25);
-  inserir_tb_tge_seca_procedure(3, 41.30, '°C', 1.95);
-  inserir_tb_tge_seca_procedure(4, 36.80, '°C', 7.10);
+  inserir_tb_tge_seca_procedure(1, 38.50, 'ï¿½C', 5.20);
+  inserir_tb_tge_seca_procedure(2, 40.25, 'ï¿½C', 3.80);
+  inserir_tb_tge_seca_procedure(3, 37.10, 'ï¿½C', 6.45);
+  inserir_tb_tge_seca_procedure(2, 42.00, 'ï¿½C', 2.10);
+  inserir_tb_tge_seca_procedure(1, 39.75, 'ï¿½C', 4.25);
+  inserir_tb_tge_seca_procedure(3, 41.30, 'ï¿½C', 1.95);
+  inserir_tb_tge_seca_procedure(4, 36.80, 'ï¿½C', 7.10);
 END;
 /
 
@@ -1102,7 +1102,7 @@ BEGIN
 
   COMMIT;
 
-  DBMS_OUTPUT.PUT_LINE('Associação inserida com sucesso ');
+  DBMS_OUTPUT.PUT_LINE('Associaï¿½ï¿½o inserida com sucesso ');
 
 EXCEPTION
   WHEN OTHERS THEN

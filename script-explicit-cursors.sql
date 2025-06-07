@@ -7,33 +7,8 @@ Integrantes: LEONARDO P SANTOS - RM557541
              VITOR GOMES - RM558244
 */
 
--- 1 Cursor - Atualizar nÃ­veis de risco com base no impacto humano classificado
-
-DECLARE
-    CURSOR c_impactos IS
-        SELECT id_impacto_humano, quantidade_afetados, estado_afetados
-        FROM tb_tge_impacto_humano;
-
-    v_id_impacto_humano tb_tge_impacto_humano.id_impacto_humano%TYPE;
-    v_quantidade INTEGER;
-    v_estado VARCHAR2(150);
-BEGIN
-    OPEN c_impactos;
-    LOOP
-        FETCH c_impactos INTO v_id_impacto_humano, v_quantidade, v_estado;
-        EXIT WHEN c_impactos%NOTFOUND;
-
-        IF v_quantidade > 1000 THEN
-            DBMS_OUTPUT.PUT_LINE('ALERTA: Alto impacto humano no estado ' || v_estado);
-        ELSE
-            DBMS_OUTPUT.PUT_LINE('Impacto controlado no estado ' || v_estado);
-        END IF;
-    END LOOP;
-    CLOSE c_impactos;
-END;
-/
-
--- 2 Cursor - VANTs utilizados para monitoramento de Ã¡reas e suas velocidades
+SET SERVEROUTPUT ON
+-- 1 Cursor - VANTs utilizados para monitoramento de Áreas e suas velocidades
 DECLARE
     CURSOR c_desastres IS
         SELECT id_desastre FROM tb_tge_desastre;
@@ -53,7 +28,7 @@ BEGIN
             JOIN tb_tge_vant v ON v.id_vant = dv.id_vant
             WHERE dv.id_desastre = v_id_desastre
         ) LOOP
-            DBMS_OUTPUT.PUT_LINE(' -> Modelo: ' || vant.modelo || ' | Velocidade MÃ¡xima: ' || vant.velocidade_maxima || ' km/h');
+            DBMS_OUTPUT.PUT_LINE(' -> Modelo: ' || vant.modelo || ' | Velocidade Máxima: ' || vant.velocidade_maxima || ' km/h');
         END LOOP;
 
     END LOOP;
@@ -61,7 +36,7 @@ BEGIN
 END;
 /
 
--- 3 Cursor - Verificar incÃªndios florestais e suas classificaÃ§Ãµes de impacto
+-- 2 Cursor - Verificar incêndios florestais e suas classificações de impacto
 
 DECLARE
   CURSOR c_incendios IS
@@ -79,7 +54,7 @@ BEGIN
     FETCH c_incendios INTO v_id_incendio, v_causa, v_tipo, v_nivel;
     EXIT WHEN c_incendios%NOTFOUND;
 
-    DBMS_OUTPUT.PUT_LINE('IncÃªndio ' || v_id_incendio || ' | Causa: ' || v_causa || ' | Tipo: ' || v_tipo || ' | NÃ­vel: ' || v_nivel);
+    DBMS_OUTPUT.PUT_LINE('Incêndio ' || v_id_incendio || ' | Causa: ' || v_causa || ' | Tipo: ' || v_tipo || ' | Nível: ' || v_nivel);
   END LOOP;
   CLOSE c_incendios;
 END;

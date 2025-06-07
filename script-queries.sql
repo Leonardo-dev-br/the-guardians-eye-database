@@ -7,7 +7,7 @@ Integrantes: LEONARDO P SANTOS - RM557541
              VITOR GOMES - RM558244
 */
 
--- 1 Query - Total de desastres por município e tipo
+-- 1 Query - Total de desastres por munic�pio e tipo
 SELECT 
     l.municipio,
     gd.grupo,
@@ -19,7 +19,7 @@ GROUP BY l.municipio, gd.grupo
 ORDER BY total_desastres DESC;
 
 
--- 2 Query - Média de pessoas afetadas por nível de impacto humano
+-- 2 Query - M�dia de pessoas afetadas por nível de impacto humano
 SELECT 
     ic.desc_nivel,
     AVG(ih.quantidade_afetados) AS media_afetados
