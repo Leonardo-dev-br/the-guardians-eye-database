@@ -59,7 +59,7 @@ SELECT fn_classificar_nivel_alerta(20, 40, 0) FROM dual;
 
 
 
---FUNÇÃO 2 -> Localização do Risco utilizando Latitude e Longitude
+--FUNÇÃO 2 -> nível de risco de desastres naturais por município
 CREATE OR REPLACE FUNCTION fn_localizacao_risco
 RETURN SYS_REFCURSOR
 IS
@@ -88,6 +88,14 @@ BEGIN
       loc.municipio;
 
   RETURN v_risco_cursor;
+END;
+/
+
+DECLARE
+  v_cursor SYS_REFCURSOR;
+BEGIN
+  v_cursor := fn_localizacao_risco();
+  DBMS_SQL.RETURN_RESULT(v_cursor);
 END;
 /
 

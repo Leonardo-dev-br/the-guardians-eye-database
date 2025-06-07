@@ -9,7 +9,7 @@ Integrantes: LEONARDO P SANTOS - RM557541
 
 
 SET SERVEROUTPUT ON
---ATUALIZA√á√ïES
+--ATUALIZA«’ES
 --Terrno Geografico
 CREATE OR REPLACE PROCEDURE atualizar_terreno_geografico_procedure (
     p_id_terreno IN NUMBER,
@@ -19,7 +19,7 @@ IS
 BEGIN
 
     IF p_id_terreno IS NULL THEN
-        AISE_APPLICATION_ERROR(-20001, 'ID do terreno n√£o pode ser nulo.');
+        RAISE_APPLICATION_ERROR(-20001, 'ID do terreno n„o pode ser nulo.');
     END IF;
 
     UPDATE tb_tge_terreno_geografico
@@ -40,10 +40,12 @@ END;
 /
 
 BEGIN
-    atualizar_terreno_geografico_procedure(1,'Plan√≠cie');
-    atualizar_terreno_geografico_procedure(4,'Depress√£o');
+    atualizar_terreno_geografico_procedure(1,'PlanÌcie');
+    atualizar_terreno_geografico_procedure(5,'Depress„o');
 END;
 /
+SELECT * FROM tb_tge_terreno_geografico;
+
 
 --Usuario
 CREATE OR REPLACE PROCEDURE atualizar_usuario_procedure (
@@ -59,7 +61,7 @@ CREATE OR REPLACE PROCEDURE atualizar_usuario_procedure (
 IS
 BEGIN
     IF p_id_usuario IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'ID do usu√°rio n√£o pode ser nulo');
+        RAISE_APPLICATION_ERROR(-20001, 'ID do usu·rio n„o pode ser nulo');
     END IF;
 
     UPDATE tb_tge_usuario
@@ -74,15 +76,15 @@ BEGIN
     WHERE id_usuario = p_id_usuario;
 
     IF SQL%ROWCOUNT = 0 THEN
-        DBMS_OUTPUT.PUT_LINE('Nenhum usu√°rio encontrado com o ID ' || p_id_usuario);
+        DBMS_OUTPUT.PUT_LINE('Nenhum usu·rio encontrado com o ID ' || p_id_usuario);
     ELSE
         COMMIT;
-        DBMS_OUTPUT.PUT_LINE('Usu√°rio atualizado com sucesso: ' || p_nome_usuario || ' ' || p_sobrenome);
+        DBMS_OUTPUT.PUT_LINE('Usu·rio atualizado com sucesso: ' || p_nome_usuario || ' ' || p_sobrenome);
     END IF;
 
 EXCEPTION
     WHEN OTHERS THEN
-        DBMS_OUTPUT.PUT_LINE('Erro ao atualizar usu√°rio: ' || SQLERRM);
+        DBMS_OUTPUT.PUT_LINE('Erro ao atualizar usu·rio: ' || SQLERRM);
 END;
 /
 
@@ -104,12 +106,15 @@ BEGIN
         'Menezes Rocha',
         98765432100,
         'Meteorologista',
-        'Previs√£o Clim√°tica',
+        'Previs„o Clim·tica',
         'carlos.rocha@cemaden.gov.br',
         'senhaCarlos2025'
     );
 END;
 /
+
+SELECT * FROM tb_tge_usuario;
+
 
 --Local
 CREATE OR REPLACE PROCEDURE atualizar_local_procedure (
@@ -124,7 +129,7 @@ CREATE OR REPLACE PROCEDURE atualizar_local_procedure (
 IS
 BEGIN
     IF p_id_local IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'ID do local n√£o pode ser nulo');
+        RAISE_APPLICATION_ERROR(-20001, 'ID do local n„o pode ser nulo');
     END IF;
 
     UPDATE tb_tge_local
@@ -153,9 +158,9 @@ END;
 BEGIN
     atualizar_local_procedure(
         1,
-        12270110, -- CEP
-        'Rua dos Oper√°rios',
-        'S√£o Jos√© dos Campos',
+        12270110,
+        'Rua dos Oper·rios',
+        'S„o JosÈ dos Campos',
         305,
         -45.8876,
         -23.1891
@@ -164,7 +169,7 @@ BEGIN
     atualizar_local_procedure(
         2,
         13500000,
-        'Avenida das Esta√ß√µes',
+        'Avenida das EstaÁıes',
         'Campinas',
         1001,
         -47.0608,
@@ -172,6 +177,8 @@ BEGIN
     );
 END;
 /
+
+SELECT * FROM tb_tge_local;
 
 
 --Subgrupo
@@ -184,7 +191,7 @@ CREATE OR REPLACE PROCEDURE atualizar_subgrupo_desastre_procedure (
 IS
 BEGIN
     IF p_id_subgrupo IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'ID do subgrupo n√£o pode ser nulo');
+        RAISE_APPLICATION_ERROR(-20001, 'ID do subgrupo n„o pode ser nulo');
     END IF;
 
     UPDATE tb_tge_subgrupo_desastre
@@ -210,19 +217,21 @@ END;
 BEGIN
     atualizar_subgrupo_desastre_procedure(
         1,
-        'Inunda√ß√µes Urbanas',
-        'Hidrol√≥gico',
+        'InundaÁıes Urbanas',
+        'HidrolÛgico',
         'Alagamento Extremo'
     );
 
     atualizar_subgrupo_desastre_procedure(
         2,
         'Deslizamentos de Terra',
-        'Geol√≥gico',
+        'GeolÛgico',
         'Movimento de Massa'
     );
 END;
 /
+
+SELECT * FROM tb_tge_subgrupo_desastre;
 
 
 --Vant
@@ -239,7 +248,7 @@ CREATE OR REPLACE PROCEDURE atualizar_vant_procedure (
 IS
 BEGIN
     IF p_id_vant IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'ID do VANT n√£o pode ser nulo');
+        RAISE_APPLICATION_ERROR(-20001, 'ID do VANT n„o pode ser nulo');
     END IF;
 
     UPDATE tb_tge_vant
@@ -286,13 +295,14 @@ BEGIN
         130.75,
         60.00,
         0.50,
-        'T√©rmica e RGB'
+        'TÈrmica e RGB'
     );
 END;
 /
+SELECT * FROM tb_tge_vant;
+
 
 --Imagens Capturadas
-
 CREATE OR REPLACE PROCEDURE atualizar_imagem_capturada_procedure (
     p_id_imagem  IN NUMBER,
     p_hospedagem IN VARCHAR2,
@@ -301,7 +311,7 @@ CREATE OR REPLACE PROCEDURE atualizar_imagem_capturada_procedure (
 IS
 BEGIN
     IF p_id_imagem IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'ID da imagem n√£o pode ser nulo');
+        RAISE_APPLICATION_ERROR(-20001, 'ID da imagem n„o pode ser nulo');
     END IF;
 
     UPDATE tb_tge_imagens_capturadas
@@ -338,6 +348,8 @@ BEGIN
     );
 END;
 /
+SELECT * FROM tb_tge_imagens_capturadas;
+
 
 --Zona
 CREATE OR REPLACE PROCEDURE atualizar_zona_procedure (
@@ -349,7 +361,7 @@ CREATE OR REPLACE PROCEDURE atualizar_zona_procedure (
 IS
 BEGIN
     IF p_id_zona IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'ID da zona n√£o pode ser nulo');
+        RAISE_APPLICATION_ERROR(-20001, 'ID da zona n„o pode ser nulo');
     END IF;
 
     UPDATE tb_tge_zona
@@ -372,12 +384,13 @@ EXCEPTION
 END;
 /
 
+
 BEGIN
     atualizar_zona_procedure(
         1,
         'Zona Urbana Norte',
         15230,
-        'M√©dio Porte'
+        'MÈdio Porte'
     );
 
     atualizar_zona_procedure(
@@ -388,6 +401,8 @@ BEGIN
     );
 END;
 /
+
+SELECT * FROM tb_tge_zona;
 
 
 --Sensores
@@ -406,7 +421,7 @@ CREATE OR REPLACE PROCEDURE atualizar_sensor_procedure (
 IS
 BEGIN
     IF p_id_sensor IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'ID do sensor n√£o pode ser nulo');
+        RAISE_APPLICATION_ERROR(-20001, 'ID do sensor n„o pode ser nulo');
     END IF;
 
     UPDATE tb_tge_sensores
@@ -436,6 +451,8 @@ END;
 /
 
 
+
+
 BEGIN
     atualizar_sensor_procedure(
         1,
@@ -455,18 +472,20 @@ BEGIN
         'STM32F103',
         'BMP280',
         'SPI',
-        'Monitoramento de Press√£o Atmosf√©rica',
+        'Monitoramento de Press„o AtmosfÈrica',
         'Bosch',
-        'Manuten√ß√£o',
-        'Anal√≥gica',
-        'Anal√≥gica',
+        'ManutenÁ„o',
+        'AnalÛgica',
+        'AnalÛgica',
         5.00
     );
 END;
 /
 
+SELECT * FROM tb_tge_sensores;
 
---Classifica√ß√£o de Impacto
+
+--ClassificaÁ„o de Impacto
 CREATE OR REPLACE PROCEDURE atualizar_impacto_classificacao_procedure (
     p_id_impacto_classificacao IN NUMBER,
     p_nivel                   IN NUMBER,
@@ -475,7 +494,7 @@ CREATE OR REPLACE PROCEDURE atualizar_impacto_classificacao_procedure (
 IS
 BEGIN
     IF p_id_impacto_classificacao IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'ID da classifica√ß√£o de impacto n√£o pode ser nulo');
+        RAISE_APPLICATION_ERROR(-20001, 'ID da classificaÁ„o de impacto n„o pode ser nulo');
     END IF;
 
     UPDATE tb_tge_impacto_classificacao
@@ -485,24 +504,24 @@ BEGIN
     WHERE id_impacto_classificacao = p_id_impacto_classificacao;
 
     IF SQL%ROWCOUNT = 0 THEN
-        DBMS_OUTPUT.PUT_LINE('Nenhuma classifica√ß√£o de impacto encontrada para o ID ' || p_id_impacto_classificacao);
+        DBMS_OUTPUT.PUT_LINE('Nenhuma classificaÁ„o de impacto encontrada para o ID ' || p_id_impacto_classificacao);
     ELSE
         COMMIT;
-        DBMS_OUTPUT.PUT_LINE('Classifica√ß√£o de impacto atualizada com sucesso: ' || p_desc_nivel);
+        DBMS_OUTPUT.PUT_LINE('ClassificaÁ„o de impacto atualizada com sucesso: ' || p_desc_nivel);
     END IF;
 
 EXCEPTION
     WHEN OTHERS THEN
-        DBMS_OUTPUT.PUT_LINE('Erro ao atualizar classifica√ß√£o de impacto: ' || SQLERRM);
+        DBMS_OUTPUT.PUT_LINE('Erro ao atualizar classificaÁ„o de impacto: ' || SQLERRM);
 END;
 /
 
 BEGIN
-    atualizar_impacto_classificacao_procedure(1, 1, 'Baixo');
     atualizar_impacto_classificacao_procedure(2, 3, 'Alto');
-    atualizar_impacto_classificacao_procedure(3, 2, 'M√©dio');
+    atualizar_impacto_classificacao_procedure(3, 2, 'MÈdio');
 END;
 /
+SELECT * FROM tb_tge_impacto_classificacao;
 
 
 --Impacto Humano
@@ -516,7 +535,7 @@ CREATE OR REPLACE PROCEDURE atualizar_impacto_humano_procedure (
 IS
 BEGIN
     IF p_id_impacto_humano IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'ID do impacto humano n√£o pode ser nulo');
+        RAISE_APPLICATION_ERROR(-20001, 'ID do impacto humano n„o pode ser nulo');
     END IF;
 
     UPDATE tb_tge_impacto_humano
@@ -545,7 +564,7 @@ BEGIN
         p_id_impacto_humano => 1,
         p_id_impacto_classificacao => 2,
         p_quantidade_afetados => 1500,
-        p_estado_afetados => 'S√£o Paulo, Rio de Janeiro',
+        p_estado_afetados => 'S„o Paulo, Rio de Janeiro',
         p_suporte_internacional => 1
     );
 
@@ -558,6 +577,7 @@ BEGIN
     );
 END;
 /
+SELECT * FROM tb_tge_impacto_humano;
 
 
 --Impacto Material
@@ -570,7 +590,7 @@ CREATE OR REPLACE PROCEDURE atualizar_impacto_material_procedure (
 IS
 BEGIN
     IF p_id_impacto_material IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'ID do impacto material n√£o pode ser nulo');
+        RAISE_APPLICATION_ERROR(-20001, 'ID do impacto material n„o pode ser nulo');
     END IF;
 
     UPDATE tb_tge_impacto_material
@@ -598,17 +618,19 @@ BEGIN
         p_id_impacto_material => 1,
         p_id_impacto_classificacao => 2,
         p_danos_materiais => 'Danos estruturais severos',
-        p_impacto_ambiental => 'Contamina√ß√£o de solo e √°gua'
+        p_impacto_ambiental => 'ContaminaÁ„o de solo e ·gua'
     );
 
     atualizar_impacto_material_procedure(
         p_id_impacto_material => 2,
         p_id_impacto_classificacao => 1,
-        p_danos_materiais => 'Perda de equipamentos eletr√¥nicos',
-        p_impacto_ambiental => 'Polui√ß√£o atmosf√©rica tempor√°ria'
+        p_danos_materiais => 'Perda de equipamentos eletrÙnicos',
+        p_impacto_ambiental => 'PoluiÁ„o atmosfÈrica tempor·ria'
     );
 END;
 /
+
+SELECT * FROM tb_tge_impacto_material;
 
 
 --Impacto
@@ -621,7 +643,7 @@ CREATE OR REPLACE PROCEDURE atualizar_impacto_procedure (
 IS
 BEGIN
     IF p_id_impacto IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'ID do impacto n√£o pode ser nulo');
+        RAISE_APPLICATION_ERROR(-20001, 'ID do impacto n„o pode ser nulo');
     END IF;
 
     UPDATE tb_tge_impacto
@@ -661,6 +683,8 @@ BEGIN
 END;
 /
 
+SELECT * FROM tb_tge_impacto;
+
 
 --Desastre
 CREATE OR REPLACE PROCEDURE atualizar_desastre_procedure (
@@ -675,7 +699,7 @@ CREATE OR REPLACE PROCEDURE atualizar_desastre_procedure (
 IS
 BEGIN
     IF p_id_desastre IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'ID do desastre n√£o pode ser nulo');
+        RAISE_APPLICATION_ERROR(-20001, 'ID do desastre n„o pode ser nulo');
     END IF;
 
     UPDATE tb_tge_desastre
@@ -723,6 +747,7 @@ BEGIN
     );
 END;
 /
+SELECT * FROM tb_tge_desastre;
 
 
 --Terreno Desastr
@@ -734,7 +759,7 @@ CREATE OR REPLACE PROCEDURE atualizar_terreno_desastre_procedure (
 IS
 BEGIN
     IF p_id_terreno_desastre IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'ID do terreno desastre n√£o pode ser nulo');
+        RAISE_APPLICATION_ERROR(-20001, 'ID do terreno desastre n„o pode ser nulo');
     END IF;
 
     UPDATE tb_tge_terreno_desastre
@@ -770,6 +795,7 @@ BEGIN
     );
 END;
 /
+SELECT * FROM tb_tge_terreno_desastre;
 
 --Grupo Desastre
 CREATE OR REPLACE PROCEDURE atualizar_grupo_desastre_procedure (
@@ -780,7 +806,7 @@ CREATE OR REPLACE PROCEDURE atualizar_grupo_desastre_procedure (
 IS
 BEGIN
     IF p_id_grupo_desastre IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'ID do grupo desastre n√£o pode ser nulo');
+        RAISE_APPLICATION_ERROR(-20001, 'ID do grupo desastre n„o pode ser nulo');
     END IF;
 
     UPDATE tb_tge_grupo_desastre
@@ -810,6 +836,8 @@ BEGIN
     );
 END;
 /
+SELECT * FROM tb_tge_grupo_desastre;
+
 
 --Vant Imagem
 CREATE OR REPLACE PROCEDURE atualizar_tb_tge_vant_imagens_procedure (
@@ -821,7 +849,7 @@ IS
 BEGIN
 
     IF p_id_vant_imagem IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'ID do vant_imagem n√£o pode ser nulo.');
+        RAISE_APPLICATION_ERROR(-20001, 'ID do vant_imagem n„o pode ser nulo.');
     END IF;
 
     UPDATE tb_tge_vant_imagens
@@ -848,6 +876,7 @@ BEGIN
     atualizar_tb_tge_vant_imagens_procedure(2, 25, 15);
 END;
 /
+SELECT * FROM tb_tge_vant_imagens;
 
 
 --Desastre Vant
@@ -860,7 +889,7 @@ IS
 BEGIN
 
     IF p_id_desastre_vant IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'ID do desastre vant n√£o pode ser nulo.');
+        RAISE_APPLICATION_ERROR(-20001, 'ID do desastre vant n„o pode ser nulo.');
     END IF;
 
     UPDATE tb_tge_desastre_vant
@@ -887,6 +916,7 @@ BEGIN
     atualizar_tb_tge_desastre_vant_procedure(5, 15, 25);
 END;
 /
+SELECT * FROM tb_tge_desastre_vant;
 
 --Desastre Zona
 CREATE OR REPLACE PROCEDURE atualizar_tb_tge_desastre_zona_procedure (
@@ -898,7 +928,7 @@ IS
 BEGIN
 
     IF p_id_desastre_zona IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'ID do desastre zona n√£o pode ser nulo.');
+        RAISE_APPLICATION_ERROR(-20001, 'ID do desastre zona n„o pode ser nulo.');
     END IF;
 
     UPDATE tb_tge_desastre_zona
@@ -925,9 +955,10 @@ BEGIN
     atualizar_tb_tge_desastre_zona_procedure(2, 4, 15);
 END;
 /
+SELECT * FROM tb_tge_desastre_zona;
 
 
---Inc√™ndio Florestal
+--IncÍndio Florestal
 CREATE OR REPLACE PROCEDURE atualizar_tb_tge_incendio_florestal_procedure (
     p_id_incendio              IN INTEGER,
     p_id_impacto_classificacao IN INTEGER,
@@ -937,7 +968,7 @@ CREATE OR REPLACE PROCEDURE atualizar_tb_tge_incendio_florestal_procedure (
 IS
 BEGIN
     IF p_id_incendio IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'ID do inc√™ndio n√£o pode ser nulo.');
+        RAISE_APPLICATION_ERROR(-20001, 'ID do incÍndio n„o pode ser nulo.');
     END IF;
 
     UPDATE tb_tge_incendio_florestal
@@ -965,6 +996,7 @@ BEGIN
     atualizar_tb_tge_incendio_florestal_procedure(2, 3, 'Causa Teste', 'Tipo Teste');
 END;
 /
+SELECT * FROM tb_tge_incendio_florestal;
 
 
 --Deslizamento
@@ -976,7 +1008,7 @@ CREATE OR REPLACE PROCEDURE atualizar_tb_tge_deslizamento_procedure (
 IS
 BEGIN
     IF p_id_deslizamento IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'ID do deslizamento n√£o pode ser nulo.');
+        RAISE_APPLICATION_ERROR(-20001, 'ID do deslizamento n„o pode ser nulo.');
     END IF;
 
     UPDATE tb_tge_deslizamento
@@ -1003,8 +1035,10 @@ BEGIN
     atualizar_tb_tge_deslizamento_procedure(2, 2, 30.50);
 END;
 /
+SELECT * FROM tb_tge_deslizamento;
 
---Inunda√ß√£o
+
+--InundaÁ„o
 CREATE OR REPLACE PROCEDURE atualizar_tb_tge_inundacao_procedure (
     p_id_inundacao             IN INTEGER,
     p_id_impacto_classificacao IN INTEGER,
@@ -1014,7 +1048,7 @@ CREATE OR REPLACE PROCEDURE atualizar_tb_tge_inundacao_procedure (
 IS
 BEGIN
     IF p_id_inundacao IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'ID da inunda√ß√£o n√£o pode ser nulo.');
+        RAISE_APPLICATION_ERROR(-20001, 'ID da inundaÁ„o n„o pode ser nulo.');
     END IF;
 
     UPDATE tb_tge_inundacao
@@ -1041,6 +1075,8 @@ BEGIN
     atualizar_tb_tge_inundacao_procedure(1, 2, 'Chuva forte e transbordamento', 3.5);
 END;
 /
+SELECT * FROM tb_tge_inundacao;
+
 
 --Seca
 CREATE OR REPLACE PROCEDURE atualizar_tb_tge_seca_procedure (
@@ -1053,7 +1089,7 @@ CREATE OR REPLACE PROCEDURE atualizar_tb_tge_seca_procedure (
 IS
 BEGIN
     IF p_id_seca IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'ID da seca n√£o pode ser nulo.');
+        RAISE_APPLICATION_ERROR(-20001, 'ID da seca n„o pode ser nulo.');
     END IF;
 
     UPDATE tb_tge_seca
@@ -1078,10 +1114,11 @@ END;
 /
 
 BEGIN
-    atualizar_tb_tge_seca_procedure(1, 2, 38.5, '¬∞C', 15.7);
-    atualizar_tb_tge_seca_procedure(2, 3, 40.0, '¬∞C', 12.3);
+    atualizar_tb_tge_seca_procedure(1, 2, 38.5, '∞C', 15.7);
+    atualizar_tb_tge_seca_procedure(2, 3, 40.0, '∞C', 12.3);
 END;
 /
+SELECT * FROM tb_tge_seca;
 
 
 --Desastre Sensores
@@ -1093,7 +1130,7 @@ CREATE OR REPLACE PROCEDURE atualizar_tb_tge_desastre_sensores_procedure (
 IS
 BEGIN
     IF p_id_desastre_sensor IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20001, 'ID do desastre sensor n√£o pode ser nulo.');
+        RAISE_APPLICATION_ERROR(-20001, 'ID do desastre sensor n„o pode ser nulo.');
     END IF;
 
     UPDATE tb_tge_desastre_sensores
@@ -1120,3 +1157,4 @@ BEGIN
     atualizar_tb_tge_desastre_sensores_procedure(2, 15, 6);
 END;
 /
+SELECT * FROM tb_tge_desastre_sensores;
