@@ -1120,4 +1120,3 @@ BEGIN
   inserir_tb_tge_desastre_sensores_procedure(7, 7);
 END;
 /
-
