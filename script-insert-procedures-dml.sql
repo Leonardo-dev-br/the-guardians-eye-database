@@ -28,8 +28,8 @@ END;
 /
 
 BEGIN
-    inserir_tb_tge_terreno_geografico_procedure('Planï¿½cie');
-    inserir_tb_tge_terreno_geografico_procedure('Depressï¿½o');
+    inserir_tb_tge_terreno_geografico_procedure('Planície');
+    inserir_tb_tge_terreno_geografico_procedure('Depressão');
     inserir_tb_tge_terreno_geografico_procedure('Colina');
     inserir_tb_tge_terreno_geografico_procedure('Chapada');
     inserir_tb_tge_terreno_geografico_procedure('Morro');
@@ -71,40 +71,18 @@ BEGIN
     
     COMMIT;
 
-    DBMS_OUTPUT.PUT_LINE('Usuï¿½rio "' || p_nome_usuario || '" inserido com sucesso.');
+    DBMS_OUTPUT.PUT_LINE('Usuário "' || p_nome_usuario || '" inserido com sucesso.');
 EXCEPTION
     WHEN OTHERS THEN
-        DBMS_OUTPUT.PUT_LINE('Erro ao inserir usuï¿½rio: ' || SQLERRM);
+        DBMS_OUTPUT.PUT_LINE('Erro ao inserir usuário: ' || SQLERRM);
 END;
 /
 
 BEGIN
-    inserir_tb_tge_usuario_procedure(
-        'Ana', 'Souza Lima', 12345678901, 'Engenheira Ambiental', 'Coleta de Dados', 'ana.lima@exemplo.com', 'senhaAna2025'
-    );
+   
 
     inserir_tb_tge_usuario_procedure(
-        'Bruno', 'Ferreira Santos', 22345678902, 'Geï¿½grafo', 'Mapeamento de ï¿½reas', 'bruno.ferreira@exemplo.com', 'senhaBruno2025'
-    );
-
-    inserir_tb_tge_usuario_procedure(
-        'Carla', 'Oliveira Mendes', 32345678903, 'Analista', 'Gestï¿½o de Riscos', 'carla.mendes@exemplo.com', 'senhaCarla2025'
-    );
-
-    inserir_tb_tge_usuario_procedure(
-        'Daniel', 'Pereira Costa', 42345678904, 'Tecnï¿½logo', 'Monitoramento Climï¿½tico', 'daniel.costa@exemplo.com', 'senhaDaniel2025'
-    );
-
-    inserir_tb_tge_usuario_procedure(
-        'Eduarda', 'Nunes Rocha', 52345678905, 'Coordenadora', 'Acompanhamento de Projetos', 'eduarda.rocha@exemplo.com', 'senhaEduarda2025'
-    );
-
-    inserir_tb_tge_usuario_procedure(
-        'Felipe', 'Silva Martins', 62345678906, 'Tï¿½cnico', 'Instalaï¿½ï¿½o de Sensores', 'felipe.martins@exemplo.com', 'senhaFelipe2025'
-    );
-
-    inserir_tb_tge_usuario_procedure(
-        'Giovana', 'Barros Almeida', 72345678907, 'Biï¿½loga', 'Anï¿½lise de Impacto', 'giovana.almeida@exemplo.com', 'senhaGiovana2025'
+        'Marcia', 'Silva Almeida', 64545678907, 'Biologa', 'Análise de Impacto', 'marcia.almeida@exemplo.com', 'senhaMarcia2025'
     );
 END;
 /

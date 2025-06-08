@@ -43,7 +43,7 @@ END;
 
 
 BEGIN
-    deletar_terreno_geografico_procedure(4);
+    deletar_terreno_geografico_procedure(5);
 END;
 /
 

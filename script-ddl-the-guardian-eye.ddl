@@ -9,7 +9,7 @@ Integrantes: LEONARDO P SANTOS - RM557541
 
 
 /*
-                                                                         SEÇÃO DE DROPS
+                                                                         SEï¿½ï¿½O DE DROPS
 DROP TABLE tb_tge_desastre CASCADE CONSTRAINTS;
 
 DROP TABLE tb_tge_desastre_sensores CASCADE CONSTRAINTS;
@@ -340,7 +340,10 @@ CREATE TABLE tb_tge_usuario (
     cargo        VARCHAR2(50) NOT NULL,
     funcao       VARCHAR2(100) NOT NULL,
     email        VARCHAR2(125) NOT NULL,
-    senha        VARCHAR2(28) NOT NULL
+    senha        VARCHAR2(28) NOT NULL,
+    papel         VARCHAR2(20)     DEFAULT 'USER' NOT NULL,
+    data_criacao  TIMESTAMP         DEFAULT SYSTIMESTAMP NOT NULL,
+    data_update   TIMESTAMP         DEFAULT SYSTIMESTAMP NOT NULL
 );
 
 ALTER TABLE tb_tge_usuario ADD CONSTRAINT tb_tge_usuario_id_usuario_pk PRIMARY KEY ( id_usuario );
@@ -466,6 +469,9 @@ ALTER TABLE tb_tge_vant_imagens
 ALTER TABLE tb_tge_desastre_zona
     ADD CONSTRAINT tb_tge_zona_id_zona_fk FOREIGN KEY ( id_zona )
         REFERENCES tb_tge_zona ( id_zona );
+
+ALTER TABLE tb_tge_usuario
+    ADD CONSTRAINT uq_tge_usuario_email UNIQUE (email);
 
 CREATE SEQUENCE tb_tge_desastre_id_desastre_seq START WITH 1 NOCACHE ORDER;
 

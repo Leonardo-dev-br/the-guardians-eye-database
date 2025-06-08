@@ -7,55 +7,35 @@ Integrantes: LEONARDO P SANTOS - RM557541
              VITOR GOMES - RM558244
 */
 
---FUNÇÃO 1 -> Classificação Nível de Alerta
-CREATE OR REPLACE FUNCTION fn_classificar_nivel_alerta (
-    p_pluviosidade IN NUMBER,    
-    p_umidade_solo IN NUMBER,    
-    p_risco_visual IN NUMBER     
-) RETURN VARCHAR2 IS
-
-    v_nivel_alerta INTEGER;
-    v_desc_alerta VARCHAR2(50);
-
+--FUNÇÃO 1 -> Retornar quantidade total de pessoas afetadas por um desastre específico
+CREATE OR REPLACE FUNCTION fn_populacao_afetada (
+  p_id_desastre IN NUMBER
+) RETURN NUMBER IS
+  v_total_populacao NUMBER := 0;
 BEGIN
-    
-    IF p_pluviosidade > 80 AND p_umidade_solo > 75 AND p_risco_visual = 1 THEN
-        v_nivel_alerta := 4; 
-    ELSIF p_pluviosidade > 50 AND p_umidade_solo > 60 THEN
-        v_nivel_alerta := 3;
-    ELSIF p_pluviosidade > 30 THEN
-        v_nivel_alerta := 2; 
-    ELSE
-        v_nivel_alerta := 1;
-    END IF;
+  SELECT SUM(z.populacao)
+  INTO v_total_populacao
+  FROM tb_tge_desastre_zona dz
+  JOIN tb_tge_zona z ON dz.id_zona = z.id_zona
+  WHERE dz.id_desastre = p_id_desastre;
 
-
-    SELECT desc_nivel INTO v_desc_alerta
-    FROM tb_tge_impacto_classificacao
-    WHERE nivel = v_nivel_alerta;
-
-    RETURN v_desc_alerta;
-
+  RETURN v_total_populacao;
 EXCEPTION
-    WHEN NO_DATA_FOUND THEN
-        RETURN 'NÍVEL DESCONHECIDO';
-    WHEN OTHERS THEN
-        RETURN 'ERRO NA CLASSIFICAÇÃO';
-
+  WHEN NO_DATA_FOUND THEN
+    RETURN 0;
 END;
 /
 
--- Exemplo 1: Chuva forte, solo muito úmido, risco visual detectado
-SELECT fn_classificar_nivel_alerta(85, 80, 1) FROM dual;
--- Resultado esperado: 'CRÍTICO'
+DECLARE
+  v_result NUMBER;
+BEGIN
+  v_result := fn_populacao_afetada(3);
+  DBMS_OUTPUT.PUT_LINE('Pessoas afetadas: ' || v_result);
+END;
+/
 
--- Exemplo 2: Chuva moderada, solo úmido, sem risco visual
-SELECT fn_classificar_nivel_alerta(55, 65, 0) FROM dual;
--- Resultado esperado: 'ALTO'
 
--- Exemplo 3: Pouca chuva
-SELECT fn_classificar_nivel_alerta(20, 40, 0) FROM dual;
--- Resultado esperado: 'BAIXO'
+
 
 
 
