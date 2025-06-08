@@ -339,7 +339,7 @@ CREATE TABLE tb_tge_usuario (
     cargo        VARCHAR2(50) NOT NULL,
     funcao       VARCHAR2(100) NOT NULL,
     email        VARCHAR2(125) NOT NULL,
-    senha        VARCHAR2(28) NOT NULL,
+    senha        VARCHAR2(100) NOT NULL,
     papel         VARCHAR2(20)     DEFAULT 'USER' NOT NULL,
     data_criacao  TIMESTAMP         DEFAULT SYSTIMESTAMP NOT NULL,
     data_update   TIMESTAMP         DEFAULT SYSTIMESTAMP NOT NULL
