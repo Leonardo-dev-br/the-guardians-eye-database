@@ -103,6 +103,37 @@
 <ownDataTypeParameters>28,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="papel" id="873E8421-48B3-AC08-433F-422459F3C8C4">
+<createdBy>leona</createdBy>
+<createdTime>2025-06-08 14:27:42 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_criacao" id="7AC9B952-C04B-298C-2C12-045F3D5CE090">
+<createdBy>leona</createdBy>
+<createdTime>2025-06-08 14:27:42 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_update" id="5F0F18FE-5231-D531-AE5E-62F1264C46FA">
+<createdBy>leona</createdBy>
+<createdTime>2025-06-08 14:27:42 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="55D37809-C5B5-65D9-B0A5-BC1EEDBEF732" name="tb_tge_usuario_id_usuario_pk">

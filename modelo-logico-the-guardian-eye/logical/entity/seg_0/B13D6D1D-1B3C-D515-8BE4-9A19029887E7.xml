@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B13D6D1D-1B3C-D515-8BE4-9A19029887E7" name="TB_TGE_USUARIO">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-29 01:48:15 UTC</createdTime>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <engineerTo>
 <item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
 </engineerTo>
@@ -18,7 +18,7 @@
 <Attribute name="id_usuario" id="A2500531-937F-6394-7DA5-403F925ACF82">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-29 01:48:28 UTC</createdTime>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <engineerTo>
 <item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
 </engineerTo>
@@ -30,7 +30,7 @@
 <Attribute name="nome_usuario" id="18A2E492-34BA-7129-F07F-2A05D9283FF4">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-29 01:48:54 UTC</createdTime>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <engineerTo>
 <item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
 </engineerTo>
@@ -43,7 +43,7 @@
 <Attribute name="sobrenome" id="88A31145-B7B0-163E-336F-28053A7BBEA9">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-29 01:49:07 UTC</createdTime>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <engineerTo>
 <item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
 </engineerTo>
@@ -56,7 +56,7 @@
 <Attribute name="cpf" id="4A3B9E26-F485-9221-0A59-A7D8D151AEFD">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-29 01:49:20 UTC</createdTime>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <engineerTo>
 <item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
 </engineerTo>
@@ -68,7 +68,7 @@
 <Attribute name="cargo" id="2DEF142D-24B9-0EA5-B67A-9F50B603EED5">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-29 01:48:40 UTC</createdTime>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <engineerTo>
 <item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
 </engineerTo>
@@ -81,7 +81,7 @@
 <Attribute name="funcao" id="600EDDD3-3846-308C-65CF-B2D175D694B8">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-30 00:53:50 UTC</createdTime>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <engineerTo>
 <item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
 </engineerTo>
@@ -94,7 +94,7 @@
 <Attribute name="email" id="38DA222D-E91B-E31B-F9DB-968A6706C9DA">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-29 01:49:57 UTC</createdTime>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <engineerTo>
 <item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
 </engineerTo>
@@ -107,7 +107,7 @@
 <Attribute name="senha" id="92CD400E-8B5A-B92F-28D4-C2D02B1A13E6">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-29 01:50:17 UTC</createdTime>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <engineerTo>
 <item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
 </engineerTo>
@@ -117,12 +117,49 @@
 <dataTypeSize>28</dataTypeSize>
 <ownDataTypeParameters>28,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="papel" id="B89C8DA0-F2E5-F20D-229A-90D0AD3BDBCF">
+<createdBy>leona</createdBy>
+<createdTime>2025-06-08 14:25:36 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_criacao" id="15BF3061-A47B-C062-D975-2AD678C50158">
+<createdBy>leona</createdBy>
+<createdTime>2025-06-08 14:25:41 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_update" id="F641ACE7-38C6-5CF1-AC47-58E5A4B46BF7">
+<createdBy>leona</createdBy>
+<createdTime>2025-06-08 14:25:48 UTC</createdTime>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
+<engineerTo>
+<item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="1D3BD356-1E5A-099F-669A-6469A2164964" name="TB_TGE_USUARIO PK">
 <createdBy>leona</createdBy>
 <createdTime>2025-05-29 01:48:39 UTC</createdTime>
-<ownerDesignName>modelo-logico-the-guardian-eye(truly)</ownerDesignName>
+<ownerDesignName>modelo-logico-the-guardian-eye</ownerDesignName>
 <engineerTo>
 <item key="4DF58FDE-278E-1EF6-7889-2854E1AEF8DC" value="true"/>
 </engineerTo>

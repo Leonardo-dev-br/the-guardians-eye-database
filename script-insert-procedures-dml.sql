@@ -41,32 +41,38 @@ END;
 
 --Usuario
 CREATE OR REPLACE PROCEDURE inserir_tb_tge_usuario_procedure (
+    p_id_usuario   IN INTEGER,
     p_nome_usuario IN VARCHAR2,
     p_sobrenome    IN VARCHAR2,
     p_cpf          IN INTEGER,
     p_cargo        IN VARCHAR2,
     p_funcao       IN VARCHAR2,
     p_email        IN VARCHAR2,
-    p_senha        IN VARCHAR2
+    p_senha        IN VARCHAR2,
+    p_papel        IN VARCHAR2
 )
 IS
 BEGIN
     INSERT INTO tb_tge_usuario (
+        id_usuario,
         nome_usuario,
         sobrenome,
         cpf,
         cargo,
         funcao,
         email,
-        senha
+        senha,
+        papel
     ) VALUES (
+        p_id_usuario,
         p_nome_usuario,
         p_sobrenome,
         p_cpf,
         p_cargo,
         p_funcao,
         p_email,
-        p_senha
+        p_senha,
+        p_papel
     );
     
     COMMIT;
@@ -79,13 +85,16 @@ END;
 /
 
 BEGIN
-   
-
-    inserir_tb_tge_usuario_procedure(
-        'Marcia', 'Silva Almeida', 64545678907, 'Biologa', 'Análise de Impacto', 'marcia.almeida@exemplo.com', 'senhaMarcia2025'
-    );
+    inserir_tb_tge_usuario_procedure(1, 'Marcia', 'Silva Almeida', 64545678907, 'Bióloga', 'Análise de Impacto', 'marcia.almeida@exemplo.com', 'senhaMarcia2025', 'USER');
+    inserir_tb_tge_usuario_procedure(2, 'Carlos', 'Souza Lima', 12345678900, 'Engenheiro', 'Prevenção de Riscos', 'carlos.lima@exemplo.com', 'senhaCarlos2025', 'ADMIN');
+    inserir_tb_tge_usuario_procedure(3, 'Ana', 'Pereira Gomes', 98765432111, 'Geógrafa', 'Mapeamento de Áreas', 'ana.gomes@exemplo.com', 'senhaAna2025', 'USER');
+    inserir_tb_tge_usuario_procedure(4, 'João', 'Oliveira Santos', 45678912322, 'Meteorologista', 'Análise Climática', 'joao.santos@exemplo.com', 'senhaJoao2025', 'USER');
+    inserir_tb_tge_usuario_procedure(5, 'Luciana', 'Fernandes Rocha', 33322211144, 'Analista', 'Gestão de Desastres', 'luciana.rocha@exemplo.com', 'senhaLuciana2025', 'ADMIN');
+    inserir_tb_tge_usuario_procedure(6, 'Pedro', 'Menezes Costa', 11223344556, 'Técnico', 'Manutenção de Sensores', 'pedro.costa@exemplo.com', 'senhaPedro2025', 'USER');
+    inserir_tb_tge_usuario_procedure(7, 'Fernanda', 'Dias Moreira', 99887766550, 'Especialista', 'Avaliação de Riscos', 'fernanda.moreira@exemplo.com', 'senhaFernanda2025', 'USER');
 END;
 /
+
 
 --Local
 CREATE OR REPLACE PROCEDURE inserir_tb_tge_local_procedure (

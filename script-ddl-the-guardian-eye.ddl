@@ -155,7 +155,6 @@ DROP PROCEDURE inserir_tb_tge_desastre_sensores_procedure;
 */
 
 
-
 CREATE TABLE tb_tge_desastre (
     id_desastre       INTEGER NOT NULL,
     id_local          INTEGER NOT NULL,
